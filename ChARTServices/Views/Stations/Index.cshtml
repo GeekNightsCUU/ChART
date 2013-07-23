@@ -1,0 +1,13 @@
+﻿@model IEnumerable<ChART.Domain.Entities.Station>
+
+@{
+    ViewBag.Title = "Stations";
+}
+
+<h2>Estaciones</h2>
+@foreach (var s in Model)
+{
+    <div class="station-item">
+        <h3>@s.Name</h3>
+    </div>
+}

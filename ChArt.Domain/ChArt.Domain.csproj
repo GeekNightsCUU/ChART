@@ -8,8 +8,8 @@
     <ProjectGuid>{1F043268-3C62-4B9D-8893-81439219D434}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ChArt.Domain</RootNamespace>
-    <AssemblyName>ChArt.Domain</AssemblyName>
+    <RootNamespace>ChART.Domain</RootNamespace>
+    <AssemblyName>ChART.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile104</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>

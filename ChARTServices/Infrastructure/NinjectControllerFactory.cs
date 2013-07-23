@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Ninject;
+using Moq;
+using ChART.DataAccess.Abstract;
+using ChART.Domain.Entities;
 
 namespace ChARTServices.Infrastructure
 {
@@ -28,6 +31,13 @@ namespace ChARTServices.Infrastructure
         private void AddBindings()
         {
             //Bindings go here
+            Mock<IStationRepository> mock = new Mock<IStationRepository>();
+            mock.Setup(m => m.Stations).Returns(new List<Station> { 
+                new Station{ Name = "Central Norte"},
+                new Station{ Name = "Central Sur"}
+            }.AsQueryable());
+
+            ninjectKernel.Bind<IStationRepository>().ToConstant(mock.Object);
         }
     }
 }

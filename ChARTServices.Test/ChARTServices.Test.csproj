@@ -57,6 +57,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ChART.DataAccess\ChART.DataAccess.csproj">
+      <Project>{c6e46878-4b4b-45dd-adf3-6f53ff1cb72c}</Project>
+      <Name>ChART.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ChArt.Domain\ChArt.Domain.csproj">
       <Project>{1f043268-3c62-4b9d-8893-81439219d434}</Project>
       <Name>ChArt.Domain</Name>

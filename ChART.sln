@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChARTServices.Test", "ChART
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChArt.Domain", "ChArt.Domain\ChArt.Domain.csproj", "{1F043268-3C62-4B9D-8893-81439219D434}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChART.DataAccess", "ChART.DataAccess\ChART.DataAccess.csproj", "{C6E46878-4B4B-45DD-ADF3-6F53FF1CB72C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{1F043268-3C62-4B9D-8893-81439219D434}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F043268-3C62-4B9D-8893-81439219D434}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F043268-3C62-4B9D-8893-81439219D434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E46878-4B4B-45DD-ADF3-6F53FF1CB72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E46878-4B4B-45DD-ADF3-6F53FF1CB72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E46878-4B4B-45DD-ADF3-6F53FF1CB72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E46878-4B4B-45DD-ADF3-6F53FF1CB72C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
