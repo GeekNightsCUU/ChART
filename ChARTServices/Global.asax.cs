@@ -23,5 +23,7 @@ namespace ChARTServices
 
             ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
         }
+
+       
     }
 }

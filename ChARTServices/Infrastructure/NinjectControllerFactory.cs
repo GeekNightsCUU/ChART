@@ -7,7 +7,9 @@ using System.Web.Routing;
 using Ninject;
 using Moq;
 using ChART.DataAccess.Abstract;
+using ChART.DataAccess.Concrete;
 using ChART.Domain.Entities;
+using System.Configuration;
 
 namespace ChARTServices.Infrastructure
 {
@@ -30,14 +32,7 @@ namespace ChARTServices.Infrastructure
 
         private void AddBindings()
         {
-            //Bindings go here
-            Mock<IStationRepository> mock = new Mock<IStationRepository>();
-            mock.Setup(m => m.Stations).Returns(new List<Station> { 
-                new Station{ Name = "Central Norte"},
-                new Station{ Name = "Central Sur"}
-            }.AsQueryable());
-
-            ninjectKernel.Bind<IStationRepository>().ToConstant(mock.Object);
+            ninjectKernel.Bind<IStationRepository>().To<MongoStationRepository>().WithConstructorArgument("connectionString", ConfigurationManager.ConnectionStrings["MongoDB"].ConnectionString);
         }
     }
 }
