@@ -32,7 +32,7 @@ namespace ChARTServices.Infrastructure
 
         private void AddBindings()
         {
-            ninjectKernel.Bind<IStationRepository>().To<MongoStationRepository>().WithConstructorArgument("connectionString", ConfigurationManager.ConnectionStrings["MongoDB"].ConnectionString);
+            ninjectKernel.Bind<IStationRepository>().To<MongoStationRepository>().WithConstructorArgument("connectionString", ConfigurationManager.AppSettings.Get("MONGOLAB_URI"));
         }
     }
 }

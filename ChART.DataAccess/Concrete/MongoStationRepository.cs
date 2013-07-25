@@ -14,10 +14,10 @@ namespace ChART.DataAccess.Concrete
         MongoDatabase database;
         public MongoStationRepository(String connectionString)
         {
-            var con = new MongoConnectionStringBuilder(connectionString);
+            var url = new MongoUrl(connectionString);
             var client = new MongoClient(connectionString);
             var server = client.GetServer();
-            database = server.GetDatabase(con.DatabaseName);
+            database = server.GetDatabase(url.DatabaseName);
         }
         public IQueryable<Station> Stations 
         { 
