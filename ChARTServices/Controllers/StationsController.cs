@@ -10,6 +10,7 @@ namespace ChARTServices.Controllers
     public class StationsController : Controller
     {
         private IStationRepository stationsRepository;
+        public int PageSize = 3;
 
         public StationsController(IStationRepository stationsRepository)
         {
@@ -18,9 +19,12 @@ namespace ChARTServices.Controllers
         //
         // GET: /Stations/
 
-        public ViewResult Index()
+        public ViewResult Index(int page = 1)
         {
-            return View(stationsRepository.Stations);
+            return View(stationsRepository.Stations
+                .OrderBy(s => s.Name)
+                .Skip((page - 1) * PageSize)
+                .Take(PageSize));
         }
 
     }
