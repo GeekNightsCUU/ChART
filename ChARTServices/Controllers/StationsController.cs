@@ -1,4 +1,5 @@
 ﻿using ChART.DataAccess.Abstract;
+using ChARTServices.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace ChARTServices.Controllers
     public class StationsController : Controller
     {
         private IStationRepository stationsRepository;
-        public int PageSize = 3;
+        public int PageSize = 20;
 
         public StationsController(IStationRepository stationsRepository)
         {
@@ -21,10 +22,18 @@ namespace ChARTServices.Controllers
 
         public ViewResult Index(int page = 1)
         {
-            return View(stationsRepository.Stations
+            StationListViewModel model = new StationListViewModel { 
+                Stations = stationsRepository.Stations
                 .OrderBy(s => s.Name)
                 .Skip((page - 1) * PageSize)
-                .Take(PageSize));
+                .Take(PageSize),
+                PagingInfo = new PagingInfo{
+                    CurrentPage = page,
+                    ItemsPerPage = PageSize,
+                    TotalItems = stationsRepository.Stations.Count()
+                }
+            };
+            return View(model);
         }
 
     }
