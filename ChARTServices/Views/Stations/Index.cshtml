@@ -16,6 +16,6 @@
     </div>
 }
 
-<div class="pager">
+<div class="pagination">
     @Html.PageLinks(Model.PagingInfo, x => Url.Action("Index",new{page = x}))
 </div>

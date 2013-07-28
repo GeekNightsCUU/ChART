@@ -11,6 +11,7 @@ namespace ChARTServices.HtmlHelpers
             StringBuilder builder = new StringBuilder();
             for (int i = 1; i <= pagingInfo.TotalPages; i++)
             {
+                TagBuilder liTag = new TagBuilder("li");
                 TagBuilder tag = new TagBuilder("a");
                 tag.MergeAttribute("href", pageUrl(i));
                 tag.InnerHtml = i.ToString();
@@ -18,7 +19,8 @@ namespace ChARTServices.HtmlHelpers
                 {
                     tag.AddCssClass("selected");
                 }
-                builder.Append(tag.ToString());
+                liTag.InnerHtml = tag.ToString();
+                builder.Append(liTag.ToString());
             }
             return MvcHtmlString.Create(builder.ToString());
         }

@@ -53,9 +53,9 @@ namespace ChARTServices.Test
 
             MvcHtmlString result = helper.PageLinks(pagingInfo, pageUrlDelegate);
 
-            Assert.AreEqual(result.ToString(), @"<a href=""Page1"">1</a>" 
-                + @"<a class=""selected"" href=""Page2"">2</a>"
-                + @"<a href=""Page3"">3</a>");
+            Assert.AreEqual(result.ToString(), @"<li><a href=""Page1"">1</a></li>"
+                + @"<li><a class=""selected"" href=""Page2"">2</a></li>"
+                + @"<li><a href=""Page3"">3</a></li>");
         }
 
         [TestMethod]
