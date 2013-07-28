@@ -4,18 +4,21 @@
     ViewBag.Title = "Stations";
 }
 
-<h2>Estaciones</h2>
+<h3>Estaciones</h3>
+<div class="list-group">
 @foreach (var s in Model.Stations)
 {
-    <div class="station-item">
-        <h3>@s.Name</h3>
-        <p>Ubicacion</p>
-        <p>
-            <span>@s.Latitude</span>,<span>@s.Longitude</span>
-        </p>
+    <div class="list-group-item">
+        <h4 class="list-group-item-heading">@s.Name</h4>
+        <div class="list-group-item-text">
+            <p>Ubicacion</p>
+            <p>
+                <span>@s.Latitude</span>,<span>@s.Longitude</span>
+            </p>
+        </div>
     </div>
 }
-
+</div>
 <div class="pagination">
     @Html.PageLinks(Model.PagingInfo, x => Url.Action("Index",new{page = x}))
 </div>
