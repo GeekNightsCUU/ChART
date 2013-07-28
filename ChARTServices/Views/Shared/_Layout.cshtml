@@ -2,13 +2,28 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
 <body>
-    <div>
+    <div class="container-narrow">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <h3 class="text-muted">ChART: Transporte P&uacute;blico en Chihuahua</h3>
+      </div>
         @RenderBody()
+      
+      <div class="footer">
+        <p>&copy; Geek Nights Chihuahua 2013</p>
+      </div>
     </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 </body>
 </html>
 
