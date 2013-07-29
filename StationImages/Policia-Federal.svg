@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="80px" height="80px" viewBox="-0.913 -0.916 80 80"
+	 overflow="visible" enable-background="new -0.913 -0.916 80 80" xml:space="preserve">
+<defs>
+</defs>
+<circle id="circle_1_" fill="#EE4456" cx="39.087" cy="39.087" r="39.087"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="32.225" y1="24.623" x2="19.29" y2="24.623"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="19.29" y1="24.623" x2="22.918" y2="35.034"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="22.918" y1="35.034" x2="14.006" y2="44.814"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="14.006" y1="44.814" x2="26.073" y2="49.939"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="26.073" y1="49.939" x2="27.493" y2="62.166"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="27.888" y1="61.771" x2="37.983" y2="56.053"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="37.983" y1="56.053" x2="49.656" y2="62.166"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="49.656" y1="62.166" x2="51.075" y2="49.547"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="51.075" y1="49.547" x2="64.169" y2="44.814"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="64.169" y1="44.814" x2="55.099" y2="35.034"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="55.099" y1="35.034" x2="59.041" y2="23.677"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="59.041" y1="23.677" x2="46.265" y2="23.677"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="46.265" y1="23.677" x2="39.078" y2="13.423"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="39.078" y1="13.423" x2="32.225" y2="24.229"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="29.896" y1="19.57" x2="12.59" y2="19.57"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="12.59" y1="19.57" x2="17.445" y2="33.5"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="17.445" y1="33.5" x2="5.52" y2="46.586"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="5.52" y1="46.586" x2="21.666" y2="53.445"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="21.666" y1="53.445" x2="23.564" y2="69.801"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="24.093" y1="69.273" x2="37.601" y2="61.623"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="37.601" y1="61.623" x2="53.219" y2="69.801"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="53.219" y1="69.801" x2="55.118" y2="52.916"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="55.118" y1="52.916" x2="72.637" y2="46.586"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="72.637" y1="46.586" x2="60.5" y2="33.5"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="60.5" y1="33.5" x2="65.777" y2="18.304"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="65.777" y1="18.304" x2="48.681" y2="18.304"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="48.681" y1="18.304" x2="39.064" y2="4.584"/>
+<line fill="none" stroke="#EFEEEE" stroke-width="2" stroke-miterlimit="10" x1="39.064" y1="4.584" x2="29.896" y2="19.042"/>
+<path id="shell1_2_" fill="#FFFFFF" stroke="#231F20" stroke-width="0.25" stroke-miterlimit="10" d="M38.467,52.75
+	c11.242-0.166,12.341-5.25,12.341-5.25v-6.582c-3.583-5.583,2.083-10.667,1.5-10.333s-1.917-4.833-1.917-4.833s-3.833,1.25-7.416,0
+	s-4.508-3-4.508-3h0.62c0,0-0.925,1.75-4.508,3s-7.416,0-7.416,0s-1.334,5.167-1.917,4.833s5.083,4.75,1.5,10.333V47.5
+	c0,0,1.099,5.084,12.341,5.25"/>
+</svg>
