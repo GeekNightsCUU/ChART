@@ -36,5 +36,25 @@ namespace ChARTServices.Controllers
             return View(model);
         }
 
+
+        // GET: /stations/Troncal
+        public ViewResult ByRoute(string route, int page = 1)
+        {
+            StationListViewModel model = new StationListViewModel
+            {
+                Stations = stationsRepository.Stations
+                .OrderBy(s => s.Name)
+                .Skip((page - 1) * PageSize)
+                .Take(PageSize)
+                .Where(s => s.Route == route),
+                PagingInfo = new PagingInfo
+                {
+                    CurrentPage = page,
+                    ItemsPerPage = PageSize,
+                    TotalItems = stationsRepository.Stations.Count()
+                }
+            };
+            return View("Index", model);
+        }
     }
 }
