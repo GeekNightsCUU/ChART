@@ -37,7 +37,7 @@ namespace ChARTServices.Controllers
         }
 
 
-        // GET: /stations/Troncal
+        // GET: /routes/Troncal/stations
         public ViewResult ByRoute(string route, int page = 1)
         {
             StationListViewModel model = new StationListViewModel

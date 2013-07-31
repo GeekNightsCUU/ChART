@@ -21,7 +21,9 @@ namespace ChARTServices
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
-            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
+            var ninjectControllerFactory = new NinjectControllerFactory();
+            ControllerBuilder.Current.SetControllerFactory(ninjectControllerFactory);
+            GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(ninjectControllerFactory.NinjectKernel);            
         }
 
        

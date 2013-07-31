@@ -17,6 +17,8 @@ namespace ChARTServices.Infrastructure
     {
         private IKernel ninjectKernel;
 
+        public IKernel NinjectKernel { get { return ninjectKernel; } }
+
         public NinjectControllerFactory()
         {
             ninjectKernel = new StandardKernel();
