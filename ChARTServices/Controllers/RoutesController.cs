@@ -25,10 +25,10 @@ namespace ChARTServices.Controllers
         }
 
         // GET api/routes/5
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
+        public Station Get(string id)
+        {
+            return stationsRepository.Station(id);
+        }
 
         //// POST api/routes
         //public void Post([FromBody]string value)

@@ -36,6 +36,13 @@ namespace ChARTServices.Controllers
             return View(model);
         }
 
+        //Get: /Stations/Details/:id
+
+        public ViewResult Details(string id)
+        {
+            var station = stationsRepository.Station(id);
+            return View(station);
+        }
 
         // GET: /routes/Troncal/stations
         public ViewResult ByRoute(string route, int page = 1)

@@ -9,7 +9,9 @@
 @foreach (var s in Model.Stations)
 {
     <div class="list-group-item">
-        <h4 class="list-group-item-heading">@s.Name</h4>
+        <h4 class="list-group-item-heading">
+            @Html.ActionLink(s.Name, "Details", "Stations", new { s.Id}, null)
+        </h4>
         <div class="list-group-item-text">
             <p>Ruta: @s.Route</p>
             <p>Ubicacion</p>

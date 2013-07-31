@@ -1,0 +1,19 @@
+﻿@model ChART.Domain.Entities.Station
+
+@{
+    ViewBag.Title = Model.Name;
+}
+<div class="list-group">
+    <div class="list-group-item">
+        <h3>@Model.Name</h3>
+        <p>
+            <span>@Model.Longitude , @Model.Latitude</span>
+        </p>
+        <p>
+            @Model.Route
+        </p>
+        <p>
+            @Model.Icon
+        </p>
+    </div>    
+</div>

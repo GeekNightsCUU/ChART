@@ -9,5 +9,6 @@ namespace ChART.DataAccess.Abstract
     public interface IStationRepository
     {
         IQueryable<Station> Stations { get; }
+        Station Station(String stationId);
     }
 }
