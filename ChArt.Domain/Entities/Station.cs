@@ -7,13 +7,15 @@ namespace ChART.Domain.Entities
 {
     public class Station
     {
-        [JsonIgnore]
-        public Object Id { get; set; }
+        [JsonProperty("id")]
+        public string Id { get; set; }
         [JsonProperty("name")]
         public string Name { get; set; }
         [JsonProperty("location")]
         public double[] Location { get; set; }
+        [JsonProperty("latitute")]
         public double Latitude { get {return Location[1];} }
+        [JsonProperty("longitude")]
         public double Longitude { get{return Location[0];} }
         [JsonProperty("route")]
         public string Route { get; set; }
