@@ -1,4 +1,5 @@
 ﻿using ChART.DataAccess.Abstract;
+using ChART.Domain.Entities;
 using ChARTServices.Models;
 using System;
 using System.Collections.Generic;
@@ -50,6 +51,19 @@ namespace ChARTServices.Controllers
         {
             var station = stationsRepository.Station(id);
             return View(station);
+        }
+
+        [HttpPost]
+        [ValidateInput(false)]
+        public ActionResult Edit(Station station)
+        {            
+            if (!ModelState.IsValid)
+            {
+                return View("Edit", station);
+            }
+            stationsRepository.Save(station);
+            TempData["notice"] = "Estacion actualizada correctamente";
+            return RedirectToAction("Index");
         }
 
         // GET: /routes/Troncal/stations

@@ -10,5 +10,6 @@ namespace ChART.DataAccess.Abstract
     {
         IQueryable<Station> Stations { get; }
         Station Station(String stationId);
+        void Save(Station station);
     }
 }

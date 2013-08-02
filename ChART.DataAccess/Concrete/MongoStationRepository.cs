@@ -38,5 +38,10 @@ namespace ChART.DataAccess.Concrete
         {
             return database.GetCollection<Station>("stations").AsQueryable<Station>().First(s => s.Id == stationId); 
         }
+
+        public void Save(Station station)
+        {
+            database.GetCollection<Station>("stations").Save(station);
+        }
     }
 }

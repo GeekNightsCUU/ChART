@@ -1,0 +1,30 @@
+﻿@model ChART.Domain.Entities.Station
+
+@{
+    ViewBag.Title = "Editar Estación";
+}
+
+@Html.ValidationSummary();
+<div class="list-group">
+    <div class="list-group-item">
+        <h3>Editar</h3>
+        @using (Html.BeginForm())
+        {
+            <div>
+                Nombre: @Html.TextBoxFor(s => s.Name) @Html.ValidationMessageFor(s => s.Name)
+            </div>            
+            <div>
+                &Iacute;cono: @Html.TextAreaFor(s => s.Icon) @Html.ValidationMessageFor(s => s.Icon)
+            </div>
+            <div>
+                Latitud: @Html.TextBoxFor(s => s.Latitude) @Html.ValidationMessageFor(s => s.Latitude)
+            </div>
+            <div>
+                Longitud: @Html.TextBoxFor(s => s.Longitude) @Html.ValidationMessageFor(s => s.Longitude)
+            </div>
+            <div>
+                <input type="submit" value="Guardar" />
+            </div>
+        }    
+    </div>
+</div>

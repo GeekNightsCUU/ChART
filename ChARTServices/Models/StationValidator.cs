@@ -9,6 +9,8 @@ namespace ChARTServices.Models
         public StationValidator()
         {
             RuleFor(s => s.Id).NotNull();
+            RuleFor(s => s.Name).NotEmpty();
+            RuleFor(s => s.Location).NotNull();
         }
     }
 }

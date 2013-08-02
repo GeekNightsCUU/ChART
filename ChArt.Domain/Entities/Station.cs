@@ -11,9 +11,9 @@ namespace ChART.Domain.Entities
         [JsonProperty("location")]
         public double[] Location { get; set; }
         [JsonProperty("latitute")]
-        public double Latitude { get {return Location[1];} }
+        public double Latitude { get {return Location[1];} set{ Location[1] = value; } }
         [JsonProperty("longitude")]
-        public double Longitude { get{return Location[0];} }
+        public double Longitude { get{return Location[0];} set{ Location[0] = value; } }
         [JsonProperty("route")]
         public string Route { get; set; }
         [JsonProperty("icon")]

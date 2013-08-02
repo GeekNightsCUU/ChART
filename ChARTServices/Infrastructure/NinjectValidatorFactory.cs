@@ -1,4 +1,5 @@
-﻿using ChARTServices.Models;
+﻿using ChART.Domain.Entities;
+using ChARTServices.Models;
 using FluentValidation;
 using Ninject;
 using System;
@@ -23,7 +24,7 @@ namespace ChARTServices.Infrastructure
 
         private void AddBindings()
         {
-            ninjectKernel.Bind<StationValidator>().To<StationValidator>();
+            ninjectKernel.Bind<IValidator<Station>>().To<StationValidator>();
         }
     }
 }

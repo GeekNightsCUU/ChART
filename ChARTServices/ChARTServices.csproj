@@ -139,9 +139,10 @@
     <Compile Include="HtmlHelpers\PagingHelpers.cs" />
     <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
     <Compile Include="Infrastructure\NinjectDependencyScope.cs" />
+    <Compile Include="Infrastructure\NinjectValidatorFactory.cs" />
     <Compile Include="Models\PagingInfo.cs" />
-    <Compile Include="Models\Station.cs" />
     <Compile Include="Models\StationListViewModel.cs" />
+    <Compile Include="Models\StationValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +192,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\About.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Stations\Edit.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
