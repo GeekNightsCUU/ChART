@@ -66,6 +66,18 @@ namespace ChARTServices.Controllers
             return RedirectToAction("Index");
         }
 
+
+        public ActionResult Icon(string id)
+        {
+            Response.ContentType = "image/svg+xml";
+            var station = stationsRepository.Station(id);            
+            if (String.IsNullOrEmpty(station.Icon))
+            {
+                return HttpNotFound();
+            }
+            return Content(station.Icon);
+        }
+
         // GET: /routes/Troncal/stations
         public ViewResult ByRoute(string route, int page = 1)
         {

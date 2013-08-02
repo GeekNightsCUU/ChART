@@ -20,6 +20,12 @@ namespace ChARTServices
             );
 
             routes.MapRoute(
+                name: "StationIcon",
+                url: "stations/{id}/icon",
+                defaults: new { controller = "Stations", action = "Icon" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

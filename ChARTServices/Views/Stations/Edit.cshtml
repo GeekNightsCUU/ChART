@@ -12,7 +12,10 @@
         {
             <div>
                 Nombre: @Html.TextBoxFor(s => s.Name) @Html.ValidationMessageFor(s => s.Name)
-            </div>            
+            </div>
+            <div>                
+                Ruta: @Html.TextBoxFor(s => s.Route) @Html.ValidationMessageFor(s => s.Route)
+            </div>             
             <div>
                 &Iacute;cono: @Html.TextAreaFor(s => s.Icon) @Html.ValidationMessageFor(s => s.Icon)
             </div>
