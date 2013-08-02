@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 using ChARTServices.Infrastructure;
+using FluentValidation.Mvc;
 
 namespace ChARTServices
 {
@@ -23,7 +24,10 @@ namespace ChARTServices
 
             var ninjectControllerFactory = new NinjectControllerFactory();
             ControllerBuilder.Current.SetControllerFactory(ninjectControllerFactory);
-            GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(ninjectControllerFactory.NinjectKernel);            
+            GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(ninjectControllerFactory.NinjectKernel);
+            FluentValidationModelValidatorProvider.Configure(provider => {
+                provider.ValidatorFactory = new NinjectValidatorFactory(ninjectControllerFactory.NinjectKernel);
+            });
         }
 
        

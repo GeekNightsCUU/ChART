@@ -29,7 +29,7 @@ namespace ChARTServices.Infrastructure
         {
             return controllerType == null
                 ? null
-                : (IController)ninjectKernel.Get(controllerType);        
+                : (IController)ninjectKernel.Get(controllerType);      
         }
 
         private void AddBindings()

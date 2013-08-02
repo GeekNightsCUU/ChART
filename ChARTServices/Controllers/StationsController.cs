@@ -44,6 +44,14 @@ namespace ChARTServices.Controllers
             return View(station);
         }
 
+        //Get: /Stations/Edit/:id
+
+        public ViewResult Edit(string id)
+        {
+            var station = stationsRepository.Station(id);
+            return View(station);
+        }
+
         // GET: /routes/Troncal/stations
         public ViewResult ByRoute(string route, int page = 1)
         {
