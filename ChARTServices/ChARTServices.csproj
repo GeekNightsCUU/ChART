@@ -163,6 +163,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Stations\Details.cshtml" />
     <Content Include="Views\Stations\Edit.cshtml" />
