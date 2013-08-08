@@ -80,6 +80,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ChART.Domain\ChART.Domain.csproj">
+      <Project>{7f7ef4ea-1bfe-4aa2-b454-f274f1067a15}</Project>
+      <Name>ChART.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
