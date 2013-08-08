@@ -65,9 +65,9 @@
   </Target>
   -->
   <ItemGroup>
-    <ProjectReference Include="..\ChArt.Domain\ChArt.Domain.csproj">
-      <Project>{752B89C8-4F45-43D6-8A9F-6D4C53C6A3A1}</Project>
-      <Name>ChArt.Domain</Name>
+    <ProjectReference Include="..\ChART.Domain\ChART.Domain.csproj">
+      <Project>{7F7EF4EA-1BFE-4AA2-B454-F274F1067A15}</Project>
+      <Name>ChART.Domain</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
