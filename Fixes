@@ -1,0 +1,6 @@
+#Fix Web Project in Mac
+cd /Library/Frameworks/Mono.framework/Home/lib/mono/xbuild/Microsoft/VisualStudio/
+
+sudo cp -r v9.0/ v10.0
+
+
