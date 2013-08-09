@@ -10,7 +10,7 @@ using System.Collections.Generic;
 
 namespace ChART.DataAccess.Concrete
 {
-    class WebStationRepository: IStationRepository
+    public class WebStationRepository: IStationRepository
     {
         private static readonly string ChARTServiceUrl = "https://chart.apphb.com/";
         private static readonly string StationsEndpoint = ChARTServiceUrl + "api/routes";       
