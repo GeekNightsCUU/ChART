@@ -36,6 +36,7 @@ namespace ChART.iOS
 			base.ViewDidLoad ();
 			stationsRepository = new WebStationRepository ();
 			var map = new MKMapView(UIScreen.MainScreen.Bounds);
+			map.MapType = MKMapType.Standard;
 			map.ShowsUserLocation = true;
 			map.Delegate = new MapViewDelegate ();
 
@@ -53,12 +54,29 @@ namespace ChART.iOS
 			InvokeOnMainThread (() => {
 				var map = this.View as MKMapView;
 				foreach (var station in stations) {
-					map.AddAnnotation (new MKPointAnnotation () {
+					map.AddAnnotation (new StationPointAnnotation () {
 						Title = station.Name,
 						Coordinate = new CLLocationCoordinate2D(station.Latitude,station.Longitude),
+						Station = station,
 					});
 				}
 			});
+		}
+	}
+
+	class StationPointAnnotation: MKPointAnnotation
+	{
+		public Station Station{ get; set; }
+		public MKPinAnnotationColor GetAnnotationColor()
+		{
+			if(this.Title.Contains("Terminal"))
+			{
+				return MKPinAnnotationColor.Green;
+			}
+			else
+			{
+				return MKPinAnnotationColor.Red;
+			}
 		}
 	}
 
@@ -75,10 +93,9 @@ namespace ChART.iOS
 			if (pinView == null)
 				pinView = new MKPinAnnotationView (annotation, annotationId);
 
-			((MKPinAnnotationView)pinView).PinColor = MKPinAnnotationColor.Red;
+			((MKPinAnnotationView)pinView).PinColor = (annotation as StationPointAnnotation).GetAnnotationColor();
 			pinView.CanShowCallout = true;
 			pinView.RightCalloutAccessoryView = UIButton.FromType (UIButtonType.DetailDisclosure);
-			//pinView.LeftCalloutAccessoryView = new UIWebView().LoadHtmlString(
 
 			return pinView;
 		}
