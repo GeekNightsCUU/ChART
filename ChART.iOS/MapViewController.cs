@@ -7,6 +7,7 @@ using ChART.DataAccess.Abstract;
 using ChART.DataAccess.Concrete;
 using MonoTouch.CoreLocation;
 using System.Threading;
+using ChART.Domain.Entities;
 
 namespace ChART.iOS
 {
@@ -37,7 +38,11 @@ namespace ChART.iOS
 			var map = new MKMapView(UIScreen.MainScreen.Bounds);
 			map.ShowsUserLocation = true;
 			map.Delegate = new MapViewDelegate ();
-			map.SetCenterCoordinate (new CLLocationCoordinate2D (28.3807, -106.0520), true);
+
+			var centerPoint = Station.TroncalRouteCenter;
+			var centerCoordinate = new CLLocationCoordinate2D (centerPoint.Y, centerPoint.X);
+			map.SetCenterCoordinate (centerCoordinate, true);
+			map.Region = MKCoordinateRegion.FromDistance (centerCoordinate, 3000, 5000);
 			this.View = map;
 			ThreadPool.QueueUserWorkItem (o => SetStationsFromRepository ());
 		}
@@ -59,7 +64,24 @@ namespace ChART.iOS
 
 	class MapViewDelegate : MKMapViewDelegate
 	{
+		private readonly string annotationId = "annotationId";
 
+		public override MKAnnotationView GetViewForAnnotation (MKMapView mapView, NSObject annotation)
+		{
+			if (annotation is MKUserLocation)
+				return null; 
+
+			MKAnnotationView pinView = (MKPinAnnotationView)mapView.DequeueReusableAnnotation (annotationId);
+			if (pinView == null)
+				pinView = new MKPinAnnotationView (annotation, annotationId);
+
+			((MKPinAnnotationView)pinView).PinColor = MKPinAnnotationColor.Red;
+			pinView.CanShowCallout = true;
+			pinView.RightCalloutAccessoryView = UIButton.FromType (UIButtonType.DetailDisclosure);
+			//pinView.LeftCalloutAccessoryView = new UIWebView().LoadHtmlString(
+
+			return pinView;
+		}
 	}
 }
 

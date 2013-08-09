@@ -1,5 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Drawing;
+
+
 namespace ChART.Domain.Entities
 {
     public class Station
@@ -23,5 +26,7 @@ namespace ChART.Domain.Entities
         {
             Location = new double[2];
         }
+
+		public static readonly PointF TroncalRouteCenter = new PointF (-106.07476f, 28.639196f);
     }
 }
