@@ -55,6 +55,7 @@
     <Compile Include="Abstract\*.cs">
       <Link>Abstract\%25%28FileName</Link>
     </Compile>
+    <Compile Include="Abstract\MainMenuItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="json.net">

@@ -2,12 +2,12 @@ using System;
 using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using ChART.Domain.iOS;
 
 namespace ChART.iOS
 {
 	public class MainMenuViewSource : UITableViewSource
 	{
-		private string[] MenuItems = {"Mapa ViveBus","Estación más Cercana","FAQS"};
 		private MainMenuViewController viewController;
 		public MainMenuViewSource (MainMenuViewController viewController)
 		{
@@ -47,7 +47,7 @@ namespace ChART.iOS
 			if (cell == null)
 				cell = new MainMenuViewCell ();
 
-			cell.TextLabel.Text = MenuItems [indexPath.Row];
+			cell.TextLabel.Text = MainMenuItem.None.FromOrder (indexPath.Row).Title();
 			
 			return cell;
 		}
