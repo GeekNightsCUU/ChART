@@ -26,7 +26,7 @@ namespace ChART.Domain.iOS
 				case 3:
 					return MainMenuItem.About;
 				default:
-					return MainMenuItem.About;
+					return MainMenuItem.None;
 			}
 		}
 
@@ -35,15 +35,32 @@ namespace ChART.Domain.iOS
 			switch (mainMenuItem) 
 			{
 				case MainMenuItem.Map:
-				return "Mapa ViveBus";
+					return "Mapa ViveBus";
 				case MainMenuItem.ClosestStation:
-				return "Estación más Cercana";
+					return "Estación más Cercana";
 				case MainMenuItem.FAQ:
-				return "FAQS";
+					return "FAQS";
 				case MainMenuItem.About:
-				return "Acerca de";
+					return "Acerca de";
 				default:
-				return "Acerca de";
+					return "Acerca de";
+			}
+		}
+
+		public static int[] Color(this MainMenuItem mainMenuItem)
+		{
+			switch (mainMenuItem) 
+			{
+				case MainMenuItem.Map:
+					return new int[3]{77,157,7};
+				case MainMenuItem.ClosestStation:
+					return new int[3]{35,142,251};
+				case MainMenuItem.FAQ:
+					return new int[3]{172,172,172};
+				case MainMenuItem.About:
+					return new int[3]{77,157,7};
+				default:
+					return new int[3]{77,157,7};
 			}
 		}
 	}
