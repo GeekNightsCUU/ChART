@@ -82,6 +82,9 @@
     <Compile Include="MapViewController.designer.cs">
       <DependentUpon>MapViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainMenuViewController.cs" />
+    <Compile Include="MainMenuViewCell.cs" />
+    <Compile Include="MainMenuViewSource.cs" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

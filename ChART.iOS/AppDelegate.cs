@@ -27,10 +27,11 @@ namespace ChART.iOS
         {
             // create a new window instance based on the screen size
             window = new UIWindow(UIScreen.MainScreen.Bounds);
-			window.RootViewController = new MapViewController ();
-            // If you have defined a view, add it here:
-            // window.RootViewController  = navigationController;
+			var rootNavigationController = new UINavigationController ();
+			var mainMenuViewController = new MainMenuViewController ();
+			rootNavigationController.PushViewController (mainMenuViewController, false);
 
+			window.RootViewController = rootNavigationController;
             // make the window visible
             window.MakeKeyAndVisible();
 
