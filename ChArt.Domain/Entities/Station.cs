@@ -28,5 +28,10 @@ namespace ChART.Domain.Entities
         }
 
 		public static readonly PointF TroncalRouteCenter = new PointF (-106.07476f, 28.639196f);
+
+		public string ImageFilename()
+		{
+			return Name.Replace("Estación","").TrimStart().Replace (" ", "-") + ".png";
+		}
     }
 }

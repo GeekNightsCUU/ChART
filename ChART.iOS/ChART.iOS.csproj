@@ -108,4 +108,138 @@
   <ItemGroup>
     <Content Include="Default-568h%402x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="StationImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\StationImages\Arquitectura.png">
+      <Link>StationImages\Arquitectura.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Catedral.png">
+      <Link>StationImages\Catedral.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Centauro-del-Norte.png">
+      <Link>StationImages\Centauro-del-Norte.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Conalep-II.png">
+      <Link>StationImages\Conalep-II.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Deportiva-Sur.png">
+      <Link>StationImages\Deportiva-Sur.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Deza-y-Ulloa.png">
+      <Link>StationImages\Deza-y-Ulloa.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Diamante.png">
+      <Link>StationImages\Diamante.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\División-del-Norte.png">
+      <Link>StationImages\División-del-Norte.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Fresno.png">
+      <Link>StationImages\Fresno.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Fuentes-Danzarinas.png">
+      <Link>StationImages\Fuentes-Danzarinas.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Fuentes-Mares.png">
+      <Link>StationImages\Fuentes-Mares.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Gemas.png">
+      <Link>StationImages\Gemas.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\IMSS.png">
+      <Link>StationImages\IMSS.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\ISSSTE.png">
+      <Link>StationImages\ISSSTE.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Independencia.png">
+      <Link>StationImages\Independencia.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Juan-Escutia.png">
+      <Link>StationImages\Juan-Escutia.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Juárez.png">
+      <Link>StationImages\Juárez.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Justicia.png">
+      <Link>StationImages\Justicia.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Karike.png">
+      <Link>StationImages\Karike.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\La-Villita.png">
+      <Link>StationImages\La-Villita.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Morelos.png">
+      <Link>StationImages\Morelos.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Niños-Héroes.png">
+      <Link>StationImages\Niños-Héroes.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Nueva-España.png">
+      <Link>StationImages\Nueva-España.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Ochoa.png">
+      <Link>StationImages\Ochoa.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Parque-Lerdo.png">
+      <Link>StationImages\Parque-Lerdo.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Pino.png">
+      <Link>StationImages\Pino.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Policía-Federal.png">
+      <Link>StationImages\Policía-Federal.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Quinta-Gameros.png">
+      <Link>StationImages\Quinta-Gameros.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\SCT.png">
+      <Link>StationImages\SCT.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Sagrado-Corazón.png">
+      <Link>StationImages\Sagrado-Corazón.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\San-José.png">
+      <Link>StationImages\San-José.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Santa-Rita.png">
+      <Link>StationImages\Santa-Rita.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Sexta.png">
+      <Link>StationImages\Sexta.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Sicomoro.png">
+      <Link>StationImages\Sicomoro.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Sor-Juana.png">
+      <Link>StationImages\Sor-Juana.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Terminal-Norte.png">
+      <Link>StationImages\Terminal-Norte.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Terminal-Sur.png">
+      <Link>StationImages\Terminal-Sur.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Trebol.png">
+      <Link>StationImages\Trebol.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Universidad.png">
+      <Link>StationImages\Universidad.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Urquidi.png">
+      <Link>StationImages\Urquidi.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Urueta.png">
+      <Link>StationImages\Urueta.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Zapata.png">
+      <Link>StationImages\Zapata.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\StationImages\Zaragoza.png">
+      <Link>StationImages\Zaragoza.png</Link>
+    </BundleResource>
+  </ItemGroup>
 </Project>

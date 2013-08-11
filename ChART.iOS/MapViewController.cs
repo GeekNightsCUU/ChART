@@ -96,8 +96,20 @@ namespace ChART.iOS
 			((MKPinAnnotationView)pinView).PinColor = (annotation as StationPointAnnotation).GetAnnotationColor();
 			pinView.CanShowCallout = true;
 			pinView.RightCalloutAccessoryView = UIButton.FromType (UIButtonType.DetailDisclosure);
+			var station = (annotation as StationPointAnnotation).Station;
+			var originalImage = UIImage.FromFile ("StationImages/" + station.ImageFilename ());
+			var image = resizedImageIcon(originalImage);
+			pinView.LeftCalloutAccessoryView = new UIImageView (image);
 
 			return pinView;
+		}
+
+
+		public UIImage resizedImageIcon(UIImage image)
+		{
+			SizeF size = new SizeF (35.0f, 35.0f);					
+			UIImage newImage = image.Scale (size);
+			return newImage;
 		}
 	}
 }
