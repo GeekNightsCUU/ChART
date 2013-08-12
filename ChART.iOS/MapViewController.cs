@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
@@ -14,6 +15,7 @@ namespace ChART.iOS
 	public partial class MapViewController : UIViewController
 	{
 		private IStationRepository stationsRepository;
+		private IQueryable<Station> stations;
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
@@ -50,34 +52,49 @@ namespace ChART.iOS
 
 		private void SetStationsFromRepository()
 		{
-			var stations = stationsRepository.Stations;
+			stations = stationsRepository.Stations;
 			InvokeOnMainThread (() => {
 				var map = this.View as MKMapView;
 				foreach (var station in stations) {
-					map.AddAnnotation (new StationPointAnnotation () {
-						Title = station.Name,
-						Coordinate = new CLLocationCoordinate2D(station.Latitude,station.Longitude),
-						Station = station,
-					});
+					map.AddAnnotation (new StationPointAnnotation (
+											station.Name,
+					            			new CLLocationCoordinate2D(station.Latitude,station.Longitude),
+					                        station));
 				}
 			});
 		}
 	}
 
-	class StationPointAnnotation: MKPointAnnotation
+	class StationPointAnnotation: MKAnnotation
 	{
 		public Station Station{ get; set; }
-		public MKPinAnnotationColor GetAnnotationColor()
+		string title;
+		CLLocationCoordinate2D coord;
+
+		public StationPointAnnotation( string title, CLLocationCoordinate2D coord, Station station)
 		{
-			if(this.Title.Contains("Terminal"))
-			{
-				return MKPinAnnotationColor.Green;
-			}
-			else
-			{
-				return MKPinAnnotationColor.Red;
+			this.title = title;
+			this.coord = coord;
+			this.Station = station;
+		}
+
+		public override string Title{
+			get{
+				return title;
 			}
 		}
+
+		public override CLLocationCoordinate2D Coordinate {
+			get{
+				return coord;
+			}
+			set{
+				WillChangeValue ("coordinate");
+				coord = value;
+				DidChangeValue ("Coordinate");
+			}
+		}
+
 	}
 
 	class MapViewDelegate : MKMapViewDelegate
@@ -89,26 +106,30 @@ namespace ChART.iOS
 			if (annotation is MKUserLocation)
 				return null; 
 
-			MKAnnotationView pinView = (MKPinAnnotationView)mapView.DequeueReusableAnnotation (annotationId);
+			MKAnnotationView pinView = (MKAnnotationView)mapView.DequeueReusableAnnotation (annotationId);
 			if (pinView == null)
-				pinView = new MKPinAnnotationView (annotation, annotationId);
+				pinView = new MKAnnotationView (annotation, annotationId);
 
-			((MKPinAnnotationView)pinView).PinColor = (annotation as StationPointAnnotation).GetAnnotationColor();
 			pinView.CanShowCallout = true;
 			pinView.RightCalloutAccessoryView = UIButton.FromType (UIButtonType.DetailDisclosure);
 			var station = (annotation as StationPointAnnotation).Station;
 			var originalImage = UIImage.FromFile ("StationImages/" + station.ImageFilename ());
 			var image = resizedImageIcon(originalImage);
-			pinView.LeftCalloutAccessoryView = new UIImageView (image);
+			pinView.Image = image;		
 
 			return pinView;
+		}
+
+		public override void CalloutAccessoryControlTapped (MKMapView mapView, MKAnnotationView view, UIControl control)
+		{
+
 		}
 
 
 		public UIImage resizedImageIcon(UIImage image)
 		{
-			SizeF size = new SizeF (35.0f, 35.0f);					
-			UIImage newImage = image.Scale (size);
+			SizeF size = new SizeF (35.0f, 35.0f);	
+			UIImage newImage = image.Scale (size, 2.0f);
 			return newImage;
 		}
 	}

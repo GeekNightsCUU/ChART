@@ -25,6 +25,7 @@ namespace ChART.iOS
 		{
 			base.ViewDidLoad ();
 			// Register the TableView's data source
+			TableView.SeparatorStyle = UITableViewCellSeparatorStyle.None;
 			TableView.Source = new MainMenuViewSource (this);
 		}
 
