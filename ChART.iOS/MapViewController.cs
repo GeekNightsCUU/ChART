@@ -28,7 +28,9 @@ namespace ChART.iOS
 			set {
 				this._station = value;
 				notificationView.Hide (true);
-				var alert = new UIAlertView("Estación mas cercana",_station.Name,null,"Ok",null);
+				var map = this.View as MKMapView;
+				map.SetCenterCoordinate (new CLLocationCoordinate2D(_station.Latitude, _station.Longitude), true);
+				var alert = new UIAlertView("Estación más cercana", _station.Name, null, "Ok", null);
 				alert.Show();
 			}
 		}
@@ -65,7 +67,7 @@ namespace ChART.iOS
 			this.View = map;
 			ThreadPool.QueueUserWorkItem (o => SetStationsFromRepository ());
 
-			notificationView = new GCDiscreetNotificationView ("Buscando estación mas cercana...", 
+			notificationView = new GCDiscreetNotificationView ("Buscando estación cercana...", 
 			                                                  true, GCDNPresentationMode.Bottom, View);
 		}
 
