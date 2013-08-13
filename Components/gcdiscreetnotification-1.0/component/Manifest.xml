@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="gcdiscreetnotification">
+  <name>Discreet Notification</name>
+  <publisher>Guillaume Campagna</publisher>
+  <publisher-url>https://github.com/gcamp/GCDiscreetNotificationView</publisher-url>
+  <version>1.0</version>
+  <summary>An unobtrusive, non-modal notification view for iOS.</summary>
+  <samples>
+    <sample id="GCDiscreetNotificationDemo">
+      <name>iOS Sample.</name>
+      <summary>iOS Sample</summary>
+    </sample>
+  </samples>
+</component>

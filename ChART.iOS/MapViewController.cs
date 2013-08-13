@@ -11,6 +11,7 @@ using System.Threading;
 using ChART.Domain.Entities;
 using System.Threading.Tasks;
 using ChART.Mobile;
+using GCDiscreetNotification;
 
 namespace ChART.iOS
 {
@@ -19,12 +20,14 @@ namespace ChART.iOS
 		private IStationRepository stationsRepository;
 		private IQueryable<Station> stations;
 		private Station _station;
+		private GCDiscreetNotificationView notificationView;
 		public Station Station {
 			get{
 				return this._station;
 			}
 			set {
 				this._station = value;
+				notificationView.Hide (true);
 				var alert = new UIAlertView("Estación mas cercana",_station.Name,null,"Ok",null);
 				alert.Show();
 			}
@@ -58,9 +61,12 @@ namespace ChART.iOS
 			var centerPoint = Station.TroncalRouteCenter;
 			var centerCoordinate = new CLLocationCoordinate2D (centerPoint.Y, centerPoint.X);
 			map.SetCenterCoordinate (centerCoordinate, true);
-			map.Region = MKCoordinateRegion.FromDistance (centerCoordinate, 3000, 5000);
+			map.Region = MKCoordinateRegion.FromDistance (centerCoordinate, 1500, 2500);
 			this.View = map;
 			ThreadPool.QueueUserWorkItem (o => SetStationsFromRepository ());
+
+			notificationView = new GCDiscreetNotificationView ("Buscando estación mas cercana...", 
+			                                                  true, GCDNPresentationMode.Bottom, View);
 		}
 
 		private void SetStationsFromRepository()
@@ -75,8 +81,8 @@ namespace ChART.iOS
 					                        station));
 				}
 				TaskScheduler scheduler = TaskScheduler.FromCurrentSynchronizationContext();
-				StationGeolocationUtil.CurrentClosestStation(stations, this, scheduler);
-				
+				notificationView.Show(true);
+				StationGeolocationUtil.CurrentClosestStation(stations, this, scheduler);				
 			});
 		}
 	}

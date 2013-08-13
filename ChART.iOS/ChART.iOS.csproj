@@ -93,6 +93,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="GCDiscreetNotification">
+      <HintPath>..\Components\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
@@ -241,5 +244,12 @@
     <BundleResource Include="..\StationImages\Zaragoza.png">
       <Link>StationImages\Zaragoza.png</Link>
     </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="gcdiscreetnotification">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
   </ItemGroup>
 </Project>

@@ -1,0 +1,205 @@
+<doc>
+    <assembly>
+        <name>GCDiscreetNotification</name>
+    </assembly>
+    <members>
+        <member name="T:ApiDefinition.Messaging">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:ApiDefinition.Messaging">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.IntPtr_objc_msgSend_IntPtr_bool_int_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr,System.Boolean,System.Int32,System.IntPtr)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.IntPtr_objc_msgSendSuper_IntPtr_bool_int_IntPtr(System.IntPtr,System.IntPtr,System.IntPtr,System.Boolean,System.Int32,System.IntPtr)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <param name="arg4">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSend_IntPtr_bool_bool(System.IntPtr,System.IntPtr,System.IntPtr,System.Boolean,System.Boolean)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSendSuper_IntPtr_bool_bool(System.IntPtr,System.IntPtr,System.IntPtr,System.Boolean,System.Boolean)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <param name="arg3">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:GCDiscreetNotification.GCDiscreetNotificationView">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:GCDiscreetNotification.GCDiscreetNotificationView">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:GCDiscreetNotification.GCDiscreetNotificationView(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:GCDiscreetNotification.GCDiscreetNotificationView(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:GCDiscreetNotification.GCDiscreetNotificationView(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:GCDiscreetNotification.GCDiscreetNotificationView(System.String,MonoTouch.UIKit.UIView)">
+            <param name="text">To be added.</param>
+            <param name="view">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:GCDiscreetNotification.GCDiscreetNotificationView(System.String,System.Boolean,MonoTouch.UIKit.UIView)">
+            <param name="text">To be added.</param>
+            <param name="activity">To be added.</param>
+            <param name="view">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:GCDiscreetNotification.GCDiscreetNotificationView(System.String,System.Boolean,GCDiscreetNotification.GCDNPresentationMode,MonoTouch.UIKit.UIView)">
+            <param name="text">To be added.</param>
+            <param name="activity">To be added.</param>
+            <param name="presentationMode">To be added.</param>
+            <param name="view">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:GCDiscreetNotification.GCDiscreetNotificationView.ActivityIndicator">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:GCDiscreetNotification.GCDiscreetNotificationView.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.Dispose(System.Boolean)">
+            <param name="disposing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.Hide(System.Boolean)">
+            <param name="animated">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.hideAnimated(System.Double)">
+            <param name="timeInterval">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.HideAnimated">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:GCDiscreetNotification.GCDiscreetNotificationView.Label">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:GCDiscreetNotification.GCDiscreetNotificationView.PresentationMode">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.SetShowActivity(System.Boolean,System.Boolean)">
+            <param name="activity">To be added.</param>
+            <param name="animated">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.SetTextLabel(System.String,System.Boolean)">
+            <param name="text">To be added.</param>
+            <param name="animated">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.SetTextLabel(System.String,System.Boolean,System.Boolean)">
+            <param name="text">To be added.</param>
+            <param name="activity">To be added.</param>
+            <param name="animated">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.Show(System.Boolean)">
+            <param name="animated">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:GCDiscreetNotification.GCDiscreetNotificationView.ShowActivity">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.ShowAndDismissAfter(System.Double)">
+            <param name="timeInterval">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.ShowAndDismissAutomaticallyAnimated">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:GCDiscreetNotification.GCDiscreetNotificationView.ShowAnimated">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:GCDiscreetNotification.GCDiscreetNotificationView.Showing">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:GCDiscreetNotification.GCDiscreetNotificationView.TextLabel">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:GCDiscreetNotification.GCDiscreetNotificationView.View">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:GCDiscreetNotification.GCDNPresentationMode">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:GCDiscreetNotification.GCDNPresentationMode.Bottom">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:GCDiscreetNotification.GCDNPresentationMode.Top">
+            <summary>To be added.</summary>
+        </member>
+    </members>
+</doc>
