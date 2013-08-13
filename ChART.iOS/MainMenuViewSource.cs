@@ -28,15 +28,15 @@ namespace ChART.iOS
 		public override int RowsInSection (UITableView tableview, int section)
 		{
 			// TODO: return the actual number of items in the section
-			return 4;
+			return 7;
 		}
 
 		public override float GetHeightForRow (UITableView tableView, NSIndexPath indexPath)
 		{
 			if (IsPhone ()) {
-				return 132.0f;
+				return indexPath.Row % 2 == 0? 90.0f: 10.0f ;
 			} else {
-				return 264.0f;
+				return indexPath.Row % 2 == 0? 220.0f: 20.0f ;
 			}
 		}
 
@@ -52,12 +52,16 @@ namespace ChART.iOS
 
 		public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
 		{
-			var menuItem = MainMenuItem.None.FromOrder (indexPath.Row);
+			var menuItem = MainMenuItem.None.FromOrder (indexPath.Row/2);
 			var cell = tableView.DequeueReusableCell (MainMenuViewCell.Key) as MainMenuViewCell;
-			if (cell == null)
-				cell = new MainMenuViewCell (menuItem);
-
-			cell.TextLabel.Text = menuItem.Title();			
+			if (cell == null) {
+				if (indexPath.Row % 2 == 0) {
+					cell = new MainMenuViewCell (menuItem);
+					cell.TextLabel.Text = menuItem.Title ();			
+				} else {
+					cell = new MainMenuViewCell ();
+				}
+			}
 			return cell;
 		}
 

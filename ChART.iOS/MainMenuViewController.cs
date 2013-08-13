@@ -25,7 +25,9 @@ namespace ChART.iOS
 		{
 			base.ViewDidLoad ();
 			// Register the TableView's data source
-			TableView.SeparatorStyle = UITableViewCellSeparatorStyle.None;
+			TableView.SeparatorStyle = UITableViewCellSeparatorStyle.SingleLine;
+			TableView.SeparatorColor = UIColor.Black;
+			TableView.BackgroundColor = UIColor.Black;
 			TableView.Source = new MainMenuViewSource (this);
 		}
 

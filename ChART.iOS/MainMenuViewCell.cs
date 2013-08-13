@@ -12,13 +12,20 @@ namespace ChART.iOS
 
 		public MainMenuViewCell (MainMenuItem mainMenuItem) : base (UITableViewCellStyle.Default, Key)
 		{
-			var textColor = UIColor.FromRGB(mainMenuItem.Color()[0],mainMenuItem.Color()[1],mainMenuItem.Color()[2]);
+			var menuColor = UIColor.FromRGB(mainMenuItem.Color()[0],mainMenuItem.Color()[1],mainMenuItem.Color()[2]);
 			TextLabel.TextAlignment = UITextAlignment.Center;
-			TextLabel.TextColor = textColor;
+			TextLabel.TextColor = UIColor.White;
 			TextLabel.BackgroundColor = UIColor.Clear;
-			TextLabel.HighlightedTextColor = textColor;
-			ContentView.BackgroundColor = UIColor.Black;
+			TextLabel.HighlightedTextColor = menuColor;
+			ContentView.BackgroundColor = menuColor;
 			SelectedBackgroundView = DefaultSelectedBackgroundView();
+		}
+
+		public MainMenuViewCell():base(UITableViewCellStyle.Default, Key)
+		{
+			TextLabel.BackgroundColor = UIColor.Clear;
+			ContentView.BackgroundColor = UIColor.Black;
+			SelectionStyle = UITableViewCellSelectionStyle.None;
 		}
 
 

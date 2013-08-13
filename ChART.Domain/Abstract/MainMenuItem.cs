@@ -56,9 +56,9 @@ namespace ChART.Domain.iOS
 				case MainMenuItem.ClosestStation:
 					return new int[3]{35,142,251};
 				case MainMenuItem.FAQ:
-					return new int[3]{172,172,172};
+					return new int[3]{190,60,5};
 				case MainMenuItem.About:
-					return new int[3]{77,157,7};
+					return new int[3]{172,172,172};
 				default:
 					return new int[3]{77,157,7};
 			}
