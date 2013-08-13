@@ -57,8 +57,7 @@ namespace ChART.iOS
 			if (cell == null)
 				cell = new MainMenuViewCell (menuItem);
 
-			cell.TextLabel.Text = menuItem.Title();
-			
+			cell.TextLabel.Text = menuItem.Title();			
 			return cell;
 		}
 

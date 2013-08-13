@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using ChART.Domain.Entities;
 
-namespace ChART.Domain
+namespace ChART.Domain.Entities
 {
-	public class StationExtensions
+	public static class StationExtensions
 	{
 		public static Station GetClosestStation(this Station station, IQueryable<Station> stations)
 		{

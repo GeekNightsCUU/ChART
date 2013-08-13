@@ -9,13 +9,26 @@ using ChART.DataAccess.Concrete;
 using MonoTouch.CoreLocation;
 using System.Threading;
 using ChART.Domain.Entities;
+using System.Threading.Tasks;
+using ChART.Mobile;
 
 namespace ChART.iOS
 {
-	public partial class MapViewController : UIViewController
+	public partial class MapViewController : UIViewController, IStationHolder
 	{
 		private IStationRepository stationsRepository;
 		private IQueryable<Station> stations;
+		private Station _station;
+		public Station Station {
+			get{
+				return this._station;
+			}
+			set {
+				this._station = value;
+				var alert = new UIAlertView("Estación mas cercana",_station.Name,null,"Ok",null);
+				alert.Show();
+			}
+		}
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
@@ -61,6 +74,9 @@ namespace ChART.iOS
 					            			new CLLocationCoordinate2D(station.Latitude,station.Longitude),
 					                        station));
 				}
+				TaskScheduler scheduler = TaskScheduler.FromCurrentSynchronizationContext();
+				StationGeolocationUtil.CurrentClosestStation(stations, this, scheduler);
+				
 			});
 		}
 	}
