@@ -38,6 +38,7 @@ namespace ChART.iOS
 			}
 
 			this.NavigationController.PushViewController (mapViewController, true);
+			mapViewController.LoadMapInfo ();
 		}
 	}
 }

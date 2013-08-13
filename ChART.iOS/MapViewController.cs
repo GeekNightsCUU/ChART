@@ -65,10 +65,21 @@ namespace ChART.iOS
 			map.SetCenterCoordinate (centerCoordinate, true);
 			map.Region = MKCoordinateRegion.FromDistance (centerCoordinate, 1500, 2500);
 			this.View = map;
-			ThreadPool.QueueUserWorkItem (o => SetStationsFromRepository ());
 
 			notificationView = new GCDiscreetNotificationView ("Buscando estación cercana...", 
 			                                                  true, GCDNPresentationMode.Bottom, View);
+		}
+
+		public void LoadMapInfo()
+		{
+			if (stations == null) {
+				ThreadPool.QueueUserWorkItem (o => {
+					SetStationsFromRepository ();
+					FindClosestStation();
+				});
+			} else {
+				FindClosestStation ();
+			}
 		}
 
 		private void SetStationsFromRepository()
@@ -81,10 +92,16 @@ namespace ChART.iOS
 											station.Name,
 					            			new CLLocationCoordinate2D(station.Latitude,station.Longitude),
 					                        station));
-				}
-				TaskScheduler scheduler = TaskScheduler.FromCurrentSynchronizationContext();
-				notificationView.Show(true);
-				StationGeolocationUtil.CurrentClosestStation(stations, this, scheduler);				
+				}							
+			});
+		}
+
+		void FindClosestStation ()
+		{
+			InvokeOnMainThread (() => {
+				TaskScheduler scheduler = TaskScheduler.FromCurrentSynchronizationContext ();
+				notificationView.Show (true);
+				StationGeolocationUtil.CurrentClosestStation (stations, this, scheduler);
 			});
 		}
 	}
