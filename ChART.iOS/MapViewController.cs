@@ -1,17 +1,17 @@
 using System;
-using System.Linq;
 using System.Drawing;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
-using MonoTouch.MapKit;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using ChART.DataAccess.Abstract;
 using ChART.DataAccess.Concrete;
-using MonoTouch.CoreLocation;
-using System.Threading;
 using ChART.Domain.Entities;
-using System.Threading.Tasks;
 using ChART.Mobile;
 using GCDiscreetNotification;
+using MonoTouch.CoreLocation;
+using MonoTouch.Foundation;
+using MonoTouch.MapKit;
+using MonoTouch.UIKit;
 
 namespace ChART.iOS
 {
@@ -169,7 +169,7 @@ namespace ChART.iOS
 
 		public UIImage resizedImageIcon(UIImage image)
 		{
-			SizeF size = new SizeF (35.0f, 35.0f);	
+			SizeF size = new SizeF (25.0f, 25.0f);	
 			UIImage newImage = image.Scale (size, 2.0f);
 			return newImage;
 		}
