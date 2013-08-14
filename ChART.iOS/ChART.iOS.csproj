@@ -96,6 +96,9 @@
     <Reference Include="GCDiscreetNotification">
       <HintPath>..\Components\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
     </Reference>
+    <Reference Include="FlyoutNavigation">
+      <HintPath>..\Components\flyoutnavigation-1.1\lib\ios\FlyoutNavigation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
@@ -249,6 +252,11 @@
     <XamarinComponentReference Include="gcdiscreetnotification">
       <InstallationInProgress>True</InstallationInProgress>
       <Version>1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="flyoutnavigation">
+      <InstallationInProgress>True</InstallationInProgress>
+      <Version>1.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
