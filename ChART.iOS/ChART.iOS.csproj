@@ -82,9 +82,10 @@
     <Compile Include="MapViewController.designer.cs">
       <DependentUpon>MapViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenuViewController.cs" />
-    <Compile Include="MainMenuViewCell.cs" />
-    <Compile Include="MainMenuViewSource.cs" />
+    <Compile Include="MainViewController.cs" />
+    <Compile Include="MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
@@ -93,11 +94,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="GCDiscreetNotification">
-      <HintPath>..\Components\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
-    </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
     <Reference Include="FlyoutNavigation">
       <HintPath>..\Components\flyoutnavigation-1.1\lib\ios\FlyoutNavigation.dll</HintPath>
+    </Reference>
+    <Reference Include="GCDiscreetNotification">
+      <HintPath>..\Components\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
@@ -110,6 +112,8 @@
   <ItemGroup>
     <InterfaceDefinition Include="MapViewController_iPhone.xib" />
     <InterfaceDefinition Include="MapViewController_iPad.xib" />
+    <InterfaceDefinition Include="MainViewController_iPhone.xib" />
+    <InterfaceDefinition Include="MainViewController_iPad.xib" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default-568h%402x.png" />
@@ -250,12 +254,12 @@
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="gcdiscreetnotification">
-      <InstallationInProgress>True</InstallationInProgress>
+      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="flyoutnavigation">
-      <InstallationInProgress>True</InstallationInProgress>
+      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>

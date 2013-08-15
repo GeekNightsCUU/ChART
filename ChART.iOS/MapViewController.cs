@@ -12,6 +12,7 @@ using MonoTouch.CoreLocation;
 using MonoTouch.Foundation;
 using MonoTouch.MapKit;
 using MonoTouch.UIKit;
+using FlyoutNavigation;
 
 namespace ChART.iOS
 {
@@ -21,6 +22,8 @@ namespace ChART.iOS
 		private IQueryable<Station> stations;
 		private Station _station;
 		private GCDiscreetNotificationView notificationView;
+		private FlyoutNavigationController navigation;
+
 		public Station Station {
 			get{
 				return this._station;
@@ -34,13 +37,15 @@ namespace ChART.iOS
 				alert.Show();
 			}
 		}
+
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
 
-		public MapViewController ()
+		public MapViewController (FlyoutNavigationController navigation)
 			: base (UserInterfaceIdiomIsPhone ? "MapViewController_iPhone" : "MapViewController_iPad", null)
 		{
+			this.navigation = navigation;
 		}
 
 		public override void DidReceiveMemoryWarning ()
@@ -55,7 +60,9 @@ namespace ChART.iOS
 		{
 			base.ViewDidLoad ();
 			stationsRepository = new WebStationRepository ();
-			var map = new MKMapView(UIScreen.MainScreen.Bounds);
+
+			var bounds = UIScreen.MainScreen.Bounds;
+			var map = new MKMapView (new RectangleF(0, 44, bounds.Width, bounds.Height));
 			map.MapType = MKMapType.Standard;
 			map.ShowsUserLocation = true;
 			map.Delegate = new MapViewDelegate ();
@@ -63,11 +70,20 @@ namespace ChART.iOS
 			var centerPoint = Station.TroncalRouteCenter;
 			var centerCoordinate = new CLLocationCoordinate2D (centerPoint.Y, centerPoint.X);
 			map.SetCenterCoordinate (centerCoordinate, true);
-			map.Region = MKCoordinateRegion.FromDistance (centerCoordinate, 1500, 2500);
-			this.View = map;
+			map.Region = MKCoordinateRegion.FromDistance (centerCoordinate, 1250, 2100);
+
+			NavigationBar.TintColor = UIColor.Black;
+			var item = new UINavigationItem ("Mapa ViveBus");
+			UIBarButtonItem button = new UIBarButtonItem ("Menu", UIBarButtonItemStyle.Bordered, delegate {
+				navigation.ToggleMenu();
+			});
+			item.LeftBarButtonItem = button;
+			item.HidesBackButton = true;
+			NavigationBar.PushNavigationItem (item, false);
 
 			notificationView = new GCDiscreetNotificationView ("Buscando estación cercana...", 
 			                                                  true, GCDNPresentationMode.Bottom, View);
+			this.View.AddSubview (map);
 		}
 
 		public void LoadMapInfo()
