@@ -7,7 +7,7 @@ using System.Drawing;
 using ChART.Mobile;
 using System.Threading.Tasks;
 
-namespace ChART.DataAccess.Concrete
+namespace ChART.Mobile
 {
 	public class StationGeolocationUtil
 	{

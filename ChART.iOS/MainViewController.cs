@@ -33,16 +33,15 @@ namespace ChART.iOS
 				NavigationRoot = new RootElement("ViveBus"){
 					new Section("Menu"){
 						new StringElement ("Mapa"),
-						new StringElement ("Estación más cercana"),
 						new StringElement ("FAQS"),
+						new StringElement ("Acerca de"),
 					}
 				},
 			};
 			navigation.ViewControllers = new [] {
-//				new UIViewController { View = new UILabel { Text = "Mapa" } },
 				new MapViewController(navigation),
-				new UIViewController { View = new UILabel { Text = "Estación Cercana" } },
 				new UIViewController { View = new UILabel { Text = "FAQS" } },
+				new UIViewController { View = new UILabel { Text = "Hecha por Geek Nights CUU" } },
 			};
 			navigation.View.Frame = UIScreen.MainScreen.Bounds;
 			navigation.HideShadow = false;

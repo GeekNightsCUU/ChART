@@ -23,6 +23,7 @@ namespace ChART.iOS
 		private Station _station;
 		private GCDiscreetNotificationView notificationView;
 		private FlyoutNavigationController navigation;
+		private MKMapView mapView;
 
 		public Station Station {
 			get{
@@ -31,7 +32,7 @@ namespace ChART.iOS
 			set {
 				this._station = value;
 				notificationView.Hide (true);
-				var map = this.View as MKMapView;
+				var map = this.mapView;
 				map.SetCenterCoordinate (new CLLocationCoordinate2D(_station.Latitude, _station.Longitude), true);
 				var alert = new UIAlertView("Estación más cercana", _station.Name, null, "Ok", null);
 				alert.Show();
@@ -63,6 +64,7 @@ namespace ChART.iOS
 
 			var bounds = UIScreen.MainScreen.Bounds;
 			var map = new MKMapView (new RectangleF(0, 44, bounds.Width, bounds.Height));
+			this.mapView = map;
 			map.MapType = MKMapType.Standard;
 			map.ShowsUserLocation = true;
 			map.Delegate = new MapViewDelegate ();
@@ -84,6 +86,7 @@ namespace ChART.iOS
 			notificationView = new GCDiscreetNotificationView ("Buscando estación cercana...", 
 			                                                  true, GCDNPresentationMode.Bottom, View);
 			this.View.AddSubview (map);
+			LoadMapInfo ();
 		}
 
 		public void LoadMapInfo()
@@ -102,12 +105,8 @@ namespace ChART.iOS
 		{
 			stations = stationsRepository.Stations;
 			InvokeOnMainThread (() => {
-				var map = this.View as MKMapView;
 				foreach (var station in stations) {
-					map.AddAnnotation (new StationPointAnnotation (
-											station.Name,
-					            			new CLLocationCoordinate2D(station.Latitude,station.Longitude),
-					                        station));
+					mapView.AddAnnotation (new StationPointAnnotation (station.Name, new CLLocationCoordinate2D(station.Latitude,station.Longitude), station));
 				}							
 			});
 		}

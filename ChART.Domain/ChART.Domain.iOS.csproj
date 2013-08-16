@@ -59,9 +59,8 @@
     <Compile Include="Abstract\*.cs">
       <Link>Abstract\%25%28FileName%29</Link>
     </Compile>
-    <Compile Include="Concrete\StationGeolocationUtil.cs" />
-    <Compile Include="Abstract\MainMenuItem.cs" />
     <Compile Include="Mobile\IStationHolder.cs" />
+    <Compile Include="Mobile\StationGeolocationUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="json.net">
