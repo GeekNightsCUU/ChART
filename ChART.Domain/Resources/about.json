@@ -1,0 +1,30 @@
+{     
+  "title": "Acerca de",
+  "sections": [ 
+  	{
+  		"header": "Acerca de",
+  		"elements":[
+  			{
+  				"type":"string",
+  				"caption":"Geek Nights CUU",
+  				"style":"subtitle",
+  				"subtitle":"https://plus.google.com/communities/113864651382277557583",  
+  				"lines": "5",
+  				"font":"Helvetica-20"				  				
+  			},
+  			{
+  				"type":"string",
+  				"caption":"Powered by Google",
+  				"font":"Helvetica-20"
+  			},
+  			{
+  				"type":"string",
+  				"caption":"zlib\n----\nThis software is based in part on zlib:\nCopyright (c) 1995-2012 Jean-loup Gailly and Mark Adler\n\nOpenGL Utility Library\n----------------------\nThis software is based in part on GLU (OpenGL Utility Library):\n\nSGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)\nCopyright (C) 2000 Silicon Graphics, Inc. All Rights Reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice including the dates of first publication and either\nthis permission notice or a reference to http://oss.sgi.com/projects/FreeB/\nshall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SILICON\nGRAPHICS, INC. BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN\nAN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of Silicon Graphics, Inc. shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization from Silicon Graphics, Inc.\n\niGLU\n----\nThis software is based in part on iGLU [https://code.google.com/p/iphone-glu/]:\n\nThe MIT License (MIT)\nCopyright (c) 2008 Christopher Stawarz\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+  				"lines": "105",
+      			"linebreak": "word-wrap",
+      			"font":"Helvetica-14"
+  			}
+  		]
+  	}
+  ]
+}

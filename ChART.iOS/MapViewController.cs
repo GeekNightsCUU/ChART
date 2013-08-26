@@ -10,9 +10,9 @@ using ChART.Mobile;
 using GCDiscreetNotification;
 using MonoTouch.CoreLocation;
 using MonoTouch.Foundation;
-using MonoTouch.MapKit;
 using MonoTouch.UIKit;
 using FlyoutNavigation;
+using Google.Maps;
 
 namespace ChART.iOS
 {
@@ -23,7 +23,7 @@ namespace ChART.iOS
 		private Station _station;
 		private GCDiscreetNotificationView notificationView;
 		private FlyoutNavigationController navigation;
-		private MKMapView mapView;
+		private MapView mapView;
 
 		public Station Station {
 			get{
@@ -33,7 +33,7 @@ namespace ChART.iOS
 				this._station = value;
 				notificationView.Hide (true);
 				var map = this.mapView;
-				map.SetCenterCoordinate (new CLLocationCoordinate2D(_station.Latitude, _station.Longitude), true);
+				map.Animate(new CLLocationCoordinate2D(_station.Latitude,Station.Longitude));				
 				var alert = new UIAlertView("Estación más cercana", _station.Name, null, "Ok", null);
 				alert.Show();
 			}
@@ -62,31 +62,47 @@ namespace ChART.iOS
 			base.ViewDidLoad ();
 			stationsRepository = new WebStationRepository ();
 
-			var bounds = UIScreen.MainScreen.Bounds;
-			var map = new MKMapView (new RectangleF(0, 44, bounds.Width, bounds.Height));
-			this.mapView = map;
-			map.MapType = MKMapType.Standard;
-			map.ShowsUserLocation = true;
-			map.Delegate = new MapViewDelegate ();
-
 			var centerPoint = Station.TroncalRouteCenter;
 			var centerCoordinate = new CLLocationCoordinate2D (centerPoint.Y, centerPoint.X);
-			map.SetCenterCoordinate (centerCoordinate, true);
-			map.Region = MKCoordinateRegion.FromDistance (centerCoordinate, 1250, 2100);
+			var bounds = UIScreen.MainScreen.Bounds;
+
+			CameraPosition cameraPosition = CameraPosition.FromCamera (centerCoordinate, 14.0f);
+			var map = MapView.FromCamera (new RectangleF (0, 44, bounds.Width, bounds.Height - 60), cameraPosition);
+			map.MyLocationEnabled = true;
+			map.MapType = MapViewType.Normal;
+
+			this.mapView = map;
 
 			NavigationBar.TintColor = UIColor.Black;
-			var item = new UINavigationItem ("Mapa ViveBus");
-			UIBarButtonItem button = new UIBarButtonItem ("Menu", UIBarButtonItemStyle.Bordered, delegate {
+			var item = new UINavigationItem ("Transporte Público Chihuahua");
+			UIBarButtonItem button = new UIBarButtonItem (MainViewController.ResizedImageIcon(UIImage.FromFile("menu.png")), UIBarButtonItemStyle.Bordered, delegate {
 				navigation.ToggleMenu();
 			});
+			UIBarButtonItem closestStationButton = new UIBarButtonItem ("Cercana", UIBarButtonItemStyle.Bordered, delegate {
+				FindClosestStation();
+			});
+
 			item.LeftBarButtonItem = button;
 			item.HidesBackButton = true;
+			item.RightBarButtonItem = closestStationButton;
 			NavigationBar.PushNavigationItem (item, false);
 
 			notificationView = new GCDiscreetNotificationView ("Buscando estación cercana...", 
-			                                                  true, GCDNPresentationMode.Bottom, View);
+			                                                  true, GCDNPresentationMode.Bottom, mapView);
 			this.View.AddSubview (map);
 			LoadMapInfo ();
+		}
+
+		public override void ViewWillAppear (bool animated)
+		{
+			base.ViewWillAppear (animated);
+			mapView.StartRendering ();
+		}
+
+		public override void ViewWillDisappear (bool animated)
+		{
+			mapView.StopRendering ();
+			base.ViewWillDisappear (animated);
 		}
 
 		public void LoadMapInfo()
@@ -106,8 +122,22 @@ namespace ChART.iOS
 			stations = stationsRepository.Stations;
 			InvokeOnMainThread (() => {
 				foreach (var station in stations) {
-					mapView.AddAnnotation (new StationPointAnnotation (station.Name, new CLLocationCoordinate2D(station.Latitude,station.Longitude), station));
-				}							
+					var stationPosition = new CLLocationCoordinate2D(station.Latitude, station.Longitude);
+					Marker marker = Marker.FromPosition(stationPosition);
+					marker.Title = station.Name;
+					var stationIcon = UIImage.FromFile ("StationImages/" + station.ImageFilename ());
+					marker.Icon = MainViewController.ResizedImageIcon(stationIcon);
+					marker.Map = mapView;
+				}	
+				var path = new MutablePath();
+				foreach(var point in Station.TroncalRoutePath)
+				{
+					path.AddCoordinate(new CLLocationCoordinate2D(point.Y, point.X));
+				}
+				var poliline = Polyline.FromPath(path);
+				poliline.StrokeColor = UIColor.Red;
+				poliline.StrokeWidth = 4.0f;
+				poliline.Map = mapView;
 			});
 		}
 
@@ -118,75 +148,6 @@ namespace ChART.iOS
 				notificationView.Show (true);
 				StationGeolocationUtil.CurrentClosestStation (stations, this, scheduler);
 			});
-		}
-	}
-
-	class StationPointAnnotation: MKAnnotation
-	{
-		public Station Station{ get; set; }
-		string title;
-		CLLocationCoordinate2D coord;
-
-		public StationPointAnnotation( string title, CLLocationCoordinate2D coord, Station station)
-		{
-			this.title = title;
-			this.coord = coord;
-			this.Station = station;
-		}
-
-		public override string Title{
-			get{
-				return title;
-			}
-		}
-
-		public override CLLocationCoordinate2D Coordinate {
-			get{
-				return coord;
-			}
-			set{
-				WillChangeValue ("coordinate");
-				coord = value;
-				DidChangeValue ("Coordinate");
-			}
-		}
-
-	}
-
-	class MapViewDelegate : MKMapViewDelegate
-	{
-		private readonly string annotationId = "annotationId";
-
-		public override MKAnnotationView GetViewForAnnotation (MKMapView mapView, NSObject annotation)
-		{
-			if (annotation is MKUserLocation)
-				return null; 
-
-			MKAnnotationView pinView = (MKAnnotationView)mapView.DequeueReusableAnnotation (annotationId);
-			if (pinView == null)
-				pinView = new MKAnnotationView (annotation, annotationId);
-
-			pinView.CanShowCallout = true;
-			pinView.RightCalloutAccessoryView = UIButton.FromType (UIButtonType.DetailDisclosure);
-			var station = (annotation as StationPointAnnotation).Station;
-			var originalImage = UIImage.FromFile ("StationImages/" + station.ImageFilename ());
-			var image = resizedImageIcon(originalImage);
-			pinView.Image = image;		
-
-			return pinView;
-		}
-
-		public override void CalloutAccessoryControlTapped (MKMapView mapView, MKAnnotationView view, UIControl control)
-		{
-
-		}
-
-
-		public UIImage resizedImageIcon(UIImage image)
-		{
-			SizeF size = new SizeF (25.0f, 25.0f);	
-			UIImage newImage = image.Scale (size, 2.0f);
-			return newImage;
 		}
 	}
 }

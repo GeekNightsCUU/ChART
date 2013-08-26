@@ -9,6 +9,7 @@ namespace ChART.iOS
 {
 	public partial class MainViewController : UIViewController
 	{
+		public static UIColor MainBackgroundColor = UIColor.FromRGB(30,30,30);
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
@@ -38,15 +39,34 @@ namespace ChART.iOS
 					}
 				},
 			};
-			navigation.ViewControllers = new [] {
+			navigation.ViewControllers = new UIViewController[] {
 				new MapViewController(navigation),
-				new UIViewController { View = new UILabel { Text = "FAQS" } },
-				new UIViewController { View = new UILabel { Text = "Hecha por Geek Nights CUU" } },
+				new InformationViewController(navigation, "faqs.json"),
+				new InformationViewController(navigation, "about.json"),
 			};
 			navigation.View.Frame = UIScreen.MainScreen.Bounds;
 			navigation.HideShadow = false;
+			navigation.NavigationTableView.BackgroundColor = MainBackgroundColor;
+			navigation.NavigationTableView.SeparatorColor = UIColor.DarkGray;
+			navigation.NavigationTableView.Delegate = new NavigationTableViewDelegate ();
 			View.AddSubview (navigation.View);
 			// Perform any additional setup after loading the view, typically from a nib.
+		}
+
+		public static UIImage ResizedImageIcon(UIImage image)
+		{
+			SizeF size = new SizeF (25.0f, 25.0f);	
+			UIImage newImage = image.Scale (size, 2.0f);
+			return newImage;
+		}
+	}
+
+	class NavigationTableViewDelegate : UITableViewDelegate
+	{
+		public override void WillDisplay (UITableView tableView, UITableViewCell cell, NSIndexPath indexPath)
+		{
+			cell.TextLabel.TextColor = UIColor.White;
+			cell.TextLabel.HighlightedTextColor = UIColor.DarkGray;
 		}
 	}
 }

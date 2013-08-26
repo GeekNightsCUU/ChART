@@ -4,6 +4,7 @@ using System.Linq;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using Google.Maps;
 
 namespace ChART.iOS
 {
@@ -15,6 +16,7 @@ namespace ChART.iOS
     {
         // class-level declarations
         UIWindow window;
+		private const string GoogleMapsAPI = "AIzaSyD151AuXVZ421ThiGi_F3VGzoBwfFkKXmk";
 
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
@@ -25,6 +27,7 @@ namespace ChART.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+			MapServices.ProvideAPIKey (GoogleMapsAPI);
             // create a new window instance based on the screen size
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 //			var rootNavigationController = new UINavigationController ();

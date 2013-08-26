@@ -10,7 +10,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
@@ -23,7 +22,11 @@
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>3.2</string>
-	<key>UIPrerenderedIcon</key>
-	<true/>
+	<key>CFBundleIdentifier</key>
+	<string>ChART.iOS</string>
+	<key>CFBundleDisplayName</key>
+	<string>Transporte Público Chihuahua</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
 </dict>
 </plist>

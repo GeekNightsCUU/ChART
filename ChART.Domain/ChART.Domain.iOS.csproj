@@ -74,4 +74,8 @@
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\about.json" />
+    <BundleResource Include="Resources\faqs.json" />
+  </ItemGroup>
 </Project>

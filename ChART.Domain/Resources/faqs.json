@@ -1,0 +1,28 @@
+{     
+  "title": "Preguntas Frecuentes",
+  "sections": [ 
+  	{
+  		"header": "Preguntas Frecuentes",
+  		"elements":[
+  			{
+  				"type":"string",
+  				"caption":"Preguntas Frecuentes del ViveBus"
+  			},
+  			 {
+      			"type": "string",
+      			"caption": "To render multi-line strings, set both the 'lines' value to a positive value and the 'line-break' mode to 'word-wrap' for example",
+      			"lines": "5",
+      			"linebreak": "word-wrap"
+      		},
+  			{
+  				"type":"string",
+  				"caption":"Another String"
+  			},
+  			{
+  				"type":"string",
+  				"caption":"And yet another one"
+  			}
+  		]
+  	}
+  ]
+}
