@@ -12,9 +12,9 @@ namespace ChART.iOS
 		DialogViewController dialogViewController;
 		NavigationViewController navigationViewController;
 
-		public InformationViewController (FlyoutNavigationController navigation, String filename )
+		public InformationViewController (FlyoutNavigationController navigation,String title, String filename )
 		{	
-			navigationViewController = new NavigationViewController (navigation);
+			navigationViewController = new NavigationViewController (navigation, title);
 			dialogViewController = new DialogViewController (JsonElement.FromFile (filename));
 		}
 

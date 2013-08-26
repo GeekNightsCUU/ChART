@@ -10,30 +10,29 @@ namespace ChART.iOS
 	public partial class NavigationViewController : UIViewController
 	{
 		private FlyoutNavigationController navigation;
+		private string title;
 
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
 
-		public NavigationViewController (FlyoutNavigationController navigation)
+		public NavigationViewController (FlyoutNavigationController navigation, String title)
 			: base (UserInterfaceIdiomIsPhone ? "NavigationViewController_iPhone" : "NavigationViewController_iPad", null)
 		{
 			this.navigation = navigation;
+			this.title = title;
 		}
 
 		public override void DidReceiveMemoryWarning ()
 		{
-			// Releases the view if it doesn't have a superview.
 			base.DidReceiveMemoryWarning ();
-			
-			// Release any cached data, images, etc that aren't in use.
 		}
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
 			NavigationBar.TintColor = UIColor.Black;
-			var item = new UINavigationItem ("Transporte Público Chihuahua");
+			var item = new UINavigationItem (this.title);
 			UIBarButtonItem button = new UIBarButtonItem (MainViewController.ResizedImageIcon(UIImage.FromFile("menu.png")), UIBarButtonItemStyle.Bordered, delegate {
 				navigation.ToggleMenu();
 			});

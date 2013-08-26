@@ -41,8 +41,8 @@ namespace ChART.iOS
 			};
 			navigation.ViewControllers = new UIViewController[] {
 				new MapViewController(navigation),
-				new InformationViewController(navigation, "faqs.json"),
-				new InformationViewController(navigation, "about.json"),
+				new InformationViewController(navigation, "Preguntas Frecuentes", "faqs.json"),
+				new InformationViewController(navigation,"Acerca de", "about.json"),
 			};
 			navigation.View.Frame = UIScreen.MainScreen.Bounds;
 			navigation.HideShadow = false;
