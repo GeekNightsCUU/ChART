@@ -27,17 +27,11 @@ namespace ChART.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-			MapServices.ProvideAPIKey (GoogleMapsAPI);
-            // create a new window instance based on the screen size
-            window = new UIWindow(UIScreen.MainScreen.Bounds);
-//			var rootNavigationController = new UINavigationController ();
-//			rootNavigationController.NavigationBar.TintColor = UIColor.FromRGB (172, 172, 172);
-//			var mainMenuViewController = new MainMenuViewController ();
-//			rootNavigationController.PushViewController (mainMenuViewController, false);
+			MapServices.ProvideAPIKey (GoogleMapsAPI);            
+            
+			window = new UIWindow(UIScreen.MainScreen.Bounds);
 			var rootNavigationController = new MainViewController (); 
-
-			window.RootViewController = rootNavigationController;
-            // make the window visible
+			window.RootViewController = rootNavigationController;            
             window.MakeKeyAndVisible();
 
             return true;
