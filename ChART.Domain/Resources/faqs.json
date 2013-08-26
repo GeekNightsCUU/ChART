@@ -2,26 +2,150 @@
   "title": "Preguntas Frecuentes",
   "sections": [ 
   	{
-  		"header": "Preguntas Frecuentes",
+  		"header": "Vivebus",
   		"elements":[
   			{
   				"type":"string",
-  				"caption":"Preguntas Frecuentes del ViveBus"
+  				"caption":"¿Cómo puedo pagar?",
+  				"font":"Helvetica-20"
   			},
-  			 {
+  			{
       			"type": "string",
-      			"caption": "To render multi-line strings, set both the 'lines' value to a positive value and the 'line-break' mode to 'word-wrap' for example",
-      			"lines": "5",
+      			"caption": "El pago se hace por medio de una tarjeta electrónica recargable. El efectivo deja de ser una forma de pago para el transporte público.",
+      			"font":"Helvetica-14",
+      			"lines": "4",
       			"linebreak": "word-wrap"
       		},
-  			{
+      		{
   				"type":"string",
-  				"caption":"Another String"
+  				"caption":"¿Donde consigo mi tarjeta?",
+  				"font":"Helvetica-20"
   			},
   			{
+      			"type": "string",
+      			"caption": "La tarjeta de uso general la puedes conseguir en las terminales estaciones, y en mas 250 tiendas Oxxo. La tarjeta de uso preferencial, con la que adultos mayores, personas con discapacidad, estudiantes e integrantes de etnias indígenas obtienen un 50% de descuento, se puede conseguir en los siguientes centros de expedición:\n - CIDECH.\n -Dirección de Vialidad y Tránsito.\n -Terminal Norte.\n\n Revisa la sección de requisitos que viene más abajo.",
+      			"font":"Helvetica-14",
+      			"lines": "14",
+      			"linebreak": "word-wrap"
+      		},
+      		{
   				"type":"string",
-  				"caption":"And yet another one"
-  			}
+  				"caption":"¿Que precio tiene?",
+  				"font":"Helvetica-20"
+  			},
+  			{
+      			"type": "string",
+      			"caption": "La tarjeta tiene un costo de 26 pesos e incluye un pasaje del sistema Vivebus. El pasaje tiene un costo de 6 pesos. Las rutas alimentadoras ó primer transbordo tiene un costo de 2 pesos. Un tercer transbordo es gratis. La tarjeta de uso preferencial obtiene un descuento del 50% en todos los casos.",
+      			"font":"Helvetica-14",
+      			"lines": "8",
+      			"linebreak": "word-wrap"
+      		},
+      		{
+  				"type":"string",
+  				"caption":"¿Que pasa si se me termina el saldo y estoy por subirme?",
+  				"font":"Helvetica-20"
+  			},
+  			{
+      			"type": "string",
+      			"caption": "El sistema Vivebus dará crédito de un pasaje (6 pesos) mismos que seran cobrados en la siguiente recarga de la tarjeta.",
+      			"font":"Helvetica-14",
+      			"lines": "8",
+      			"linebreak": "word-wrap"
+      		},
+      		{
+  				"type":"string",
+  				"caption":"¿Que horario tiene?",
+  				"font":"Helvetica-20"
+  			},
+  			{
+      			"type": "string",
+      			"caption": "El Vivebus tiene un horario de 5:30 a 22:30. Las rutas alimentaduras tendrán un horario de 5:15 a 23:30.",
+      			"font":"Helvetica-14",
+      			"lines": "2",
+      			"linebreak": "word-wrap"
+      		} 	 	 			
+  		]
+  	},
+  	{
+  		"header": "Automovilistas",
+  		"elements":[
+  			{
+  				"type":"string",
+  				"caption":"¿Que es el carril exlusivo Vivebus?",
+  				"font":"Helvetica-20"
+  			},
+  			{
+      			"type": "string",
+      			"caption": "El sistema BRT Vivebus cuenta con un carril exclusivo por el cual solo pueden circular camiones del mismo sistema. En situaciones de emergencia otros vehículos oficiales como ambulacias o patrullas podrán circular por el carril. En ningún momento un automóvil particular podrá circular por el carril exclusivo.",
+      			"font":"Helvetica-14",
+      			"lines": "8",
+      			"linebreak": "word-wrap"
+      		},
+      		{
+  				"type":"string",
+  				"caption":"¿Que es la vuelta izquierda indirecta?",
+  				"font":"Helvetica-20"
+  			},
+  			{
+      			"type": "string",
+      			"caption": "En las calles por donde circula el sistema Vivebus está prohibida la vuelta izquierda. Si se requiere dar vuelta hacia la izquierda se debe dar vuelta a la derecha, continuar alrededor de la cuadra y entonces cruzar la calle de la ruta troncal.",
+      			"font":"Helvetica-14",
+      			"lines": "12",
+      			"linebreak": "word-wrap"
+      		}	 			
+  		]
+  	},
+  	{
+  		"header": "Requisitos Tarjeta de Uso Preferencial",
+  		"elements":[
+  			{
+  				"type":"string",
+  				"caption":"Estudiantes",
+  				"font":"Helvetica-20"
+  			},
+  			{
+      			"type": "string",
+      			"caption": "-CURP\n-Credencial Escolar ó Constancia de Inscripción.",
+      			"font":"Helvetica-14",
+      			"lines": "8",
+      			"linebreak": "word-wrap"
+      		},
+      		{
+  				"type":"string",
+  				"caption":"Adultos Mayores",
+  				"font":"Helvetica-20"
+  			},
+  			{
+      			"type": "string",
+      			"caption": "-CURP\n-Credencial de Elector.",
+      			"font":"Helvetica-14",
+      			"lines": "12",
+      			"linebreak": "word-wrap"
+      		},
+      		{
+  				"type":"string",
+  				"caption":"Personas con Discapacidad.",
+  				"font":"Helvetica-20"
+  			},
+  			{
+      			"type": "string",
+      			"caption": "-CURP\n-Credencial que acredite su calidad de persona con discapacidad expedida por la Dirección de Grupos Vulnerables de la Secretaría de Desarrollo Social.",
+      			"font":"Helvetica-14",
+      			"lines": "12",
+      			"linebreak": "word-wrap"
+      		},
+      		{
+  				"type":"string",
+  				"caption":"Integrantes de Etnias Indígenas.",
+  				"font":"Helvetica-20"
+  			},
+  			{
+      			"type": "string",
+      			"caption": "Una carta emitida de forma gratuita por la Coordinación de la Tarahumara de la Secretaría de Desarrollo Social.\n Requisitos para dicha carta:\n-CURP\n-Acta de Nacimiento\n-Comprobante de Domicilio",
+      			"font":"Helvetica-14",
+      			"lines": "12",
+      			"linebreak": "word-wrap"
+      		}	 			
   		]
   	}
   ]
