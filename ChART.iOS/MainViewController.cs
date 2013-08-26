@@ -59,6 +59,10 @@ namespace ChART.iOS
 			UIImage newImage = image.Scale (size, 2.0f);
 			return newImage;
 		}
+
+		public static void VisitCommunity(object obj){
+			UIApplication.SharedApplication.OpenUrl (new NSUrl ("https://plus.google.com/communities/113864651382277557583"));
+		}
 	}
 
 	class NavigationTableViewDelegate : UITableViewDelegate

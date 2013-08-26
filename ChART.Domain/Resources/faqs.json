@@ -61,7 +61,7 @@
       			"type": "string",
       			"caption": "El Vivebus tiene un horario de 5:30 a 22:30. Las rutas alimentaduras tendrán un horario de 5:15 a 23:30.",
       			"font":"Helvetica-14",
-      			"lines": "2",
+      			"lines": "4",
       			"linebreak": "word-wrap"
       		} 	 	 			
   		]
