@@ -135,7 +135,7 @@ namespace ChART.iOS
 					path.AddCoordinate(new CLLocationCoordinate2D(point.Y, point.X));
 				}
 				var poliline = Polyline.FromPath(path);
-				poliline.StrokeColor = UIColor.Red;
+				poliline.StrokeColor = UIColor.DarkGray;
 				poliline.StrokeWidth = 4.0f;
 				poliline.Map = mapView;
 			});
