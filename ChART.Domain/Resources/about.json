@@ -8,7 +8,14 @@
   				"type":"string",
   				"caption":"Geek Nights CUU",  				  				  				
   				"font":"Helvetica-20"				  				
-  			},
+  			},  			
+  			{
+      			"type": "string",
+      			"caption": "Somos una comunidad creada con la finalidad de compartir conocimiento, experiencias e información que contribuya a fortalecer nuestro perfil profesional.",
+      			"font":"Helvetica-14",
+      			"lines": "4",
+      			"linebreak": "word-wrap"
+      		},
   			{
   				"type":"string",
   				"caption":"Únete a nuestra comunidad",
