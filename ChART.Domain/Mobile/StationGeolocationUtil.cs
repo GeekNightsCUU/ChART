@@ -15,8 +15,14 @@ namespace ChART.Mobile
 		{
 			var locator = new Geolocator { DesiredAccuracy = 50 };
 			locator.GetPositionAsync (10000).ContinueWith (t => {
-				var currentStation = new Station{Latitude = t.Result.Latitude, Longitude = t.Result.Longitude};
-				holder.Station = currentStation.GetClosestStation(stations);
+				if(t.Status == TaskStatus.RanToCompletion){
+					var currentStation = new Station{Latitude = t.Result.Latitude, Longitude = t.Result.Longitude};
+					holder.Station = currentStation.GetClosestStation(stations);
+				}else{
+					var currentStation = Station.NotFoundStation();
+					holder.Station = currentStation;
+				}
+
 			}, scheduler);						
 		}
 	}

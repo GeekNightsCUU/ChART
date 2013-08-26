@@ -9,6 +9,9 @@ namespace ChART.Domain.Entities
 	{
 		public static Station GetClosestStation(this Station station, IQueryable<Station> stations)
 		{
+			if (stations.Count () == 0) {
+				return Station.NotFoundStation ();
+			}
 			return stations.OrderBy (currentStation => SortableApproximateDistance (station, currentStation)).First ();
 		}
 

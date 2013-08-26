@@ -196,6 +196,12 @@ namespace ChART.Domain.Entities
 			new PointF (-106.124733f,28.703550f)
 		};
 
+		public static Station NotFoundStation()
+		{
+			return new Station{Latitude = Station.TroncalRouteCenter.Y, Longitude = Station.TroncalRouteCenter.X,
+				Name = "Imposible obtener estación cercana"};
+		}
+
 		public string ImageFilename()
 		{
 			return Name.Replace("Estación","").TrimStart().Replace (" ", "-") + ".png";
