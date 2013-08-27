@@ -15,7 +15,7 @@ namespace ChART.DataAccess.Concrete
     {
         private static readonly string ChARTServiceUrl = "https://chart.apphb.com/";
         private static readonly string StationsEndpoint = ChARTServiceUrl + "api/routes";  
-		private static readonly string RoutesFile = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.UserProfile), "routes.json");
+		private static readonly string RoutesFile = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments), "routes.json");
 
         public IQueryable<Station> Stations { 
             get{

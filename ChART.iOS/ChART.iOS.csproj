@@ -55,7 +55,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Ricardo Gonzalez Echavarria (98WCQT9QWB)</CodesignKey>
+    <CodesignProvision>19A54741-9636-421C-AF29-DFAADCAC4CFF</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>none</DebugType>
@@ -105,14 +106,14 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="MonoTouch.Dialog-1" />
-    <Reference Include="GoogleMaps">
-      <HintPath>..\Components\googlemapsios-1.3.1.1\lib\ios\GoogleMaps.dll</HintPath>
+    <Reference Include="GCDiscreetNotification">
+      <HintPath>..\Components\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
     </Reference>
     <Reference Include="FlyoutNavigation">
       <HintPath>..\Components\flyoutnavigation-1.1\lib\ios\FlyoutNavigation.dll</HintPath>
     </Reference>
-    <Reference Include="GCDiscreetNotification">
-      <HintPath>..\Components\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
+    <Reference Include="GoogleMaps">
+      <HintPath>..\Components\googlemapsios-1.3.1.1\lib\ios\GoogleMaps.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
