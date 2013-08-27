@@ -74,7 +74,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
-    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignKey>iPhone Distribution: Ricardo Gonzalez Echavarria (S4B46Y8N4E)</CodesignKey>
+    <CodesignProvision>487ACFC6-6DB5-444E-AC8A-7F649D2F1D5E</CodesignProvision>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+    <IpaPackageName />
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
