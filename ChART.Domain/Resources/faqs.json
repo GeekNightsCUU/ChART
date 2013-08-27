@@ -23,7 +23,7 @@
   			},
   			{
       			"type": "string",
-      			"caption": "La tarjeta de uso general la puedes conseguir en las terminales estaciones, y en mas 250 tiendas Oxxo. La tarjeta de uso preferencial, con la que adultos mayores, personas con discapacidad, estudiantes e integrantes de etnias indígenas obtienen un 50% de descuento, se puede conseguir en los siguientes centros de expedición:\n - CIDECH.\n -Dirección de Vialidad y Tránsito.\n -Terminal Norte.\n\n Revisa la sección de requisitos que viene más abajo.",
+      			"caption": "La tarjeta de uso general la puedes conseguir en las terminales estaciones, y en mas 250 tiendas Oxxo. La tarjeta de uso preferencial, con la que adultos mayores, personas con discapacidad, estudiantes e integrantes de etnias indígenas obtienen un 50% de descuento, se puede conseguir en los siguientes centros de expedición:\n - CIDECH.\n -Dirección de Vialidad y Tránsito.\n -Terminal Norte.\n -Terminal Sur\n\n Revisa la sección de requisitos que viene más abajo.",
       			"font":"Helvetica-14",
       			"lines": "14",
       			"linebreak": "word-wrap"
