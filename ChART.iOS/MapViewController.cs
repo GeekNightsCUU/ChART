@@ -13,6 +13,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using FlyoutNavigation;
 using Google.Maps;
+using Xamarin.Geolocation;
 
 namespace ChART.iOS
 {
@@ -146,7 +147,7 @@ namespace ChART.iOS
 			InvokeOnMainThread (() => {
 				TaskScheduler scheduler = TaskScheduler.FromCurrentSynchronizationContext ();
 				notificationView.Show (true);
-				StationGeolocationUtil.CurrentClosestStation (stations, this, scheduler);
+				StationGeolocationUtil.CurrentClosestStation (stations, this, scheduler, new Geolocator());
 			});
 		}
 	}
