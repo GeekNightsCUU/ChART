@@ -19,10 +19,8 @@
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>4.3</string>
-	<key>CFBundleDisplayName</key>
-	<string>Transporte Público Chihuahua</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>CFBundleIconFiles</key>
@@ -34,5 +32,7 @@
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.geeknightscuu.chart</string>
+	<key>CFBundleDisplayName</key>
+	<string>ChARTCUU</string>
 </dict>
 </plist>
