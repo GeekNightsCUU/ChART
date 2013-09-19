@@ -204,7 +204,7 @@ namespace ChART.Domain.Entities
 
 		public string ImageFilename()
 		{
-			return Name.Replace("Estación","").TrimStart().Replace (" ", "-") + ".png";
+			return Name.Replace("Estación","").TrimStart().Replace (" ", "_") + ".png";
 		}
     }
 }

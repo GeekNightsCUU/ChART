@@ -133,6 +133,7 @@ namespace ChART.Android
 					RunOnUiThread (delegate{
 						foreach(var station in stations){
 							var location = new LatLng(station.Latitude, station.Longitude);
+							var stationImageId = Resources.GetIdentifier(station.ImageFilename,"drawable",this.PackageName);
 							MarkerOptions markerOptions = new MarkerOptions()
 								.SetPosition(location)
 								.SetTitle(station.Name);

@@ -70,6 +70,135 @@
     <AndroidResource Include="Resources\layout\MainNavigation.axml" />
     <AndroidResource Include="Resources\values\Themes.xml" />
     <AndroidResource Include="Resources\values-v11\Themes.xml" />
+    <AndroidResource Include="..\StationImages\Arquitectura.png">
+      <Link>Resources\drawable\Arquitectura.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Catedral.png">
+      <Link>Resources\drawable\Catedral.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Centauro_del_Norte.png">
+      <Link>Resources\drawable\Centauro_del_Norte.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Conalep_II.png">
+      <Link>Resources\drawable\Conalep_II.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Deportiva_Sur.png">
+      <Link>Resources\drawable\Deportiva_Sur.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Deza_y_Ulloa.png">
+      <Link>Resources\drawable\Deza_y_Ulloa.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Diamante.png">
+      <Link>Resources\drawable\Diamante.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\División_del_Norte.png">
+      <Link>Resources\drawable\División_del_Norte.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Fresno.png">
+      <Link>Resources\drawable\Fresno.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Fuentes_Danzarinas.png">
+      <Link>Resources\drawable\Fuentes_Danzarinas.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Fuentes_Mares.png">
+      <Link>Resources\drawable\Fuentes_Mares.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Gemas.png">
+      <Link>Resources\drawable\Gemas.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\IMSS.png">
+      <Link>Resources\drawable\IMSS.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\ISSSTE.png">
+      <Link>Resources\drawable\ISSSTE.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Independencia.png">
+      <Link>Resources\drawable\Independencia.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Juan_Escutia.png">
+      <Link>Resources\drawable\Juan_Escutia.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Juárez.png">
+      <Link>Resources\drawable\Juárez.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Justicia.png">
+      <Link>Resources\drawable\Justicia.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Karike.png">
+      <Link>Resources\drawable\Karike.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\La_Villita.png">
+      <Link>Resources\drawable\La_Villita.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Morelos.png">
+      <Link>Resources\drawable\Morelos.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Niños_Héroes.png">
+      <Link>Resources\drawable\Niños_Héroes.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Nueva_España.png">
+      <Link>Resources\drawable\Nueva_España.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Ochoa.png">
+      <Link>Resources\drawable\Ochoa.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Parque_Lerdo.png">
+      <Link>Resources\drawable\Parque_Lerdo.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Pino.png">
+      <Link>Resources\drawable\Pino.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Policía_Federal.png">
+      <Link>Resources\drawable\Policía_Federal.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Quinta_Gameros.png">
+      <Link>Resources\drawable\Quinta_Gameros.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\SCT.png">
+      <Link>Resources\drawable\SCT.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Sagrado_Corazón.png">
+      <Link>Resources\drawable\Sagrado_Corazón.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\San_José.png">
+      <Link>Resources\drawable\San_José.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Santa_Rita.png">
+      <Link>Resources\drawable\Santa_Rita.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Sexta.png">
+      <Link>Resources\drawable\Sexta.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Sicomoro.png">
+      <Link>Resources\drawable\Sicomoro.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Sor_Juana.png">
+      <Link>Resources\drawable\Sor_Juana.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Terminal_Norte.png">
+      <Link>Resources\drawable\Terminal_Norte.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Terminal_Sur.png">
+      <Link>Resources\drawable\Terminal_Sur.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Trebol.png">
+      <Link>Resources\drawable\Trebol.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Universidad.png">
+      <Link>Resources\drawable\Universidad.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Urquidi.png">
+      <Link>Resources\drawable\Urquidi.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Urueta.png">
+      <Link>Resources\drawable\Urueta.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Zapata.png">
+      <Link>Resources\drawable\Zapata.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Zaragoza.png">
+      <Link>Resources\drawable\Zaragoza.png</Link>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
