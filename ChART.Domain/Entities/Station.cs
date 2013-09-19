@@ -1,6 +1,7 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Drawing;
+using System.Text.RegularExpressions;
 
 
 namespace ChART.Domain.Entities
@@ -204,7 +205,11 @@ namespace ChART.Domain.Entities
 
 		public string ImageFilename()
 		{
-			return Name.Replace("Estación","").TrimStart().Replace (" ", "-") + ".png";
+			var originalFilename = Name.Replace("Estación","").TrimStart().Replace (" ", "_");
+			var normalizedFilename = originalFilename.Normalize (System.Text.NormalizationForm.FormD);
+			var reg = new Regex("[^a-zA-Z0-9_ ]");
+			var imageFilename = reg.Replace (normalizedFilename, "");
+			return  imageFilename;
 		}
     }
 }
