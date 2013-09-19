@@ -3,9 +3,21 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:padding="20dip">
-    <FrameLayout
-        android:id="@+id/map"
+    android:padding="2dip">
+    <LinearLayout
+        android:id="@+id/mapLayout"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="0dip">
+        <Button
+            android:text="Estación Cercana"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/closestStation" />
+        <FrameLayout
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
 </LinearLayout>

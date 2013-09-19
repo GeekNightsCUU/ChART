@@ -1,25 +1,34 @@
 using System;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Linq;
 using Android.OS;
 using Android.Gms.Maps;
 using Android.App;
+using Android.Gms.Maps.Model;
+using Android.Graphics;
+using Android.Widget;
 using Xamarin.ActionbarSherlockBinding.App;
 using SherlockActionBar = Xamarin.ActionbarSherlockBinding.App.ActionBar;
 using FragmentTransaction = Android.Support.V4.App.FragmentTransaction;
-using ChART.Domain.Entities;
-using Android.Gms.Maps.Model;
-using System.Threading;
 using ChART.DataAccess.Concrete;
-using Android.Graphics;
+using ChART.Mobile;
+using ChART.Domain.Entities;
+using Xamarin.Geolocation;
 
 namespace ChART.Android
 {
 	[Activity (Label = "ChARTCUU", MainLauncher = true)]
-	public class MainActivity : SherlockFragmentActivity, SherlockActionBar.ITabListener
+	public class MainActivity : SherlockFragmentActivity, SherlockActionBar.ITabListener, IStationHolder
 	{
 		private readonly string[] tabs = {"Mapa", "FAQS", "Acerca de"};
 		private GoogleMap _map;
 		private SupportMapFragment _mapFragment;
 		private WebStationRepository stationRepository;
+		private Button closestStationButton;
+		private IQueryable<Station> stations;
+		private Station _station;
+		private ProgressDialog progressDialog;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -27,6 +36,11 @@ namespace ChART.Android
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.MainNavigation);
 			stationRepository = new WebStationRepository ();
+			closestStationButton = FindViewById<Button> (Resource.Id.closestStation);
+			closestStationButton.Enabled = false;
+			closestStationButton.Click += delegate {
+				FindClosestStation();
+			};
 			InitMapFragment();
 
 			SupportActionBar.NavigationMode = SherlockActionBar.NavigationModeTabs;
@@ -59,6 +73,32 @@ namespace ChART.Android
 		{
 		}
 
+		public Station Station {
+			get{
+				return this._station;
+			}
+			set {
+				this._station = value;
+				progressDialog.Dismiss ();
+				var centerPoint = new LatLng (_station.Latitude, _station.Longitude);
+				_map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(centerPoint,14.0f));
+				new AlertDialog.Builder (this).SetTitle ("Estación más cercana").SetMessage (_station.Name).SetNeutralButton ("Ok", delegate {}).Show ();
+			}
+		}
+
+		private void FindClosestStation ()
+		{
+			RunOnUiThread (() => {
+				TaskScheduler scheduler = TaskScheduler.FromCurrentSynchronizationContext ();
+				progressDialog = new ProgressDialog(this);
+				progressDialog.SetMessage("Buscando estación cercana...");
+				progressDialog.Show();
+				progressDialog.SetCanceledOnTouchOutside(false);
+				progressDialog.SetCancelable(false);
+				StationGeolocationUtil.CurrentClosestStation (stations, this, scheduler, new Geolocator(this));
+			});
+		}
+
 		private void InitMapFragment()
 		{
 			_mapFragment = SupportFragmentManager.FindFragmentByTag("map") as SupportMapFragment;
@@ -89,7 +129,7 @@ namespace ChART.Android
 						_map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(centerPoint,14.0f));
 						_map.MyLocationEnabled = true;
 					});
-					var stations = stationRepository.Stations;
+					stations = stationRepository.Stations;
 					RunOnUiThread (delegate{
 						foreach(var station in stations){
 							var location = new LatLng(station.Latitude, station.Longitude);
@@ -105,8 +145,8 @@ namespace ChART.Android
 							polylineOptions.Add(new LatLng(point.Y, point.X));
 						}
 						_map.AddPolyline(polylineOptions);
+						closestStationButton.Enabled = true;
 					});
-
 				}
 			}
 		}

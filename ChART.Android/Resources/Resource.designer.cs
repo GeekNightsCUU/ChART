@@ -1087,6 +1087,9 @@ namespace ChART.Android
 			// aapt resource value: 0x7f05000f
 			public const int abs__up = 2131034127;
 			
+			// aapt resource value: 0x7f050037
+			public const int closestStation = 2131034167;
+			
 			// aapt resource value: 0x7f05000d
 			public const int disableHome = 2131034125;
 			
@@ -1102,8 +1105,11 @@ namespace ChART.Android
 			// aapt resource value: 0x7f050006
 			public const int listMode = 2131034118;
 			
+			// aapt resource value: 0x7f050038
+			public const int map = 2131034168;
+			
 			// aapt resource value: 0x7f050036
-			public const int map = 2131034166;
+			public const int mapLayout = 2131034166;
 			
 			// aapt resource value: 0x7f050000
 			public const int none = 2131034112;
@@ -1369,6 +1375,9 @@ namespace ChART.Android
 		
 		public partial class Style
 		{
+			
+			// aapt resource value: 0x7f0a0059
+			public const int ChARTTheme = 2131361881;
 			
 			// aapt resource value: 0x7f0a0046
 			public const int Sherlock___TextAppearance_Small = 2131361862;
