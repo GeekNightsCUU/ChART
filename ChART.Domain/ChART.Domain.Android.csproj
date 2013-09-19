@@ -46,6 +46,7 @@
     <Reference Include="Xamarin.Mobile">
       <HintPath>..\Components\xamarin.mobile-0.6.3\lib\android\Xamarin.Mobile.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="Abstract\IStationRepository.cs" />
     <Compile Include="Mobile\IStationHolder.cs" />
     <Compile Include="Mobile\StationGeolocationUtil.cs" />
+    <Compile Include="Concrete\WebStationRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -66,6 +68,7 @@
     <Folder Include="Entities\" />
     <Folder Include="Abstract\" />
     <Folder Include="Mobile\" />
+    <Folder Include="Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="xamarin.mobile">
