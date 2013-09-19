@@ -81,7 +81,7 @@ namespace ChART.Android
 				this._station = value;
 				progressDialog.Dismiss ();
 				var centerPoint = new LatLng (_station.Latitude, _station.Longitude);
-				_map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(centerPoint,14.0f));
+				_map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(centerPoint,15.0f));
 				new AlertDialog.Builder (this).SetTitle ("Estación más cercana").SetMessage (_station.Name).SetNeutralButton ("Ok", delegate {}).Show ();
 			}
 		}
@@ -126,7 +126,7 @@ namespace ChART.Android
 				{
 					var centerPoint = new LatLng (Station.TroncalRouteCenter.Y, Station.TroncalRouteCenter.X);
 					RunOnUiThread (delegate{
-						_map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(centerPoint,14.0f));
+						_map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(centerPoint,15.0f));
 						_map.MyLocationEnabled = true;
 					});
 					stations = stationRepository.Stations;
