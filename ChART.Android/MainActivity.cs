@@ -133,9 +133,14 @@ namespace ChART.Android
 					RunOnUiThread (delegate{
 						foreach(var station in stations){
 							var location = new LatLng(station.Latitude, station.Longitude);
-							var stationImageId = Resources.GetIdentifier(station.ImageFilename,"drawable",this.PackageName);
+							var stationImageId = Resources.GetIdentifier( station.ImageFilename().ToLower(), "drawable", PackageName);
+							var originalStationBitmap = BitmapFactory.DecodeResource(Resources, stationImageId);
+							var scale = Resources.DisplayMetrics.Density;
+							var pixels = 35;
+							var stationBitmap = Bitmap.CreateScaledBitmap(originalStationBitmap, (int) (pixels * scale + 0.5f), (int) (pixels * scale + 0.5f), false);
 							MarkerOptions markerOptions = new MarkerOptions()
 								.SetPosition(location)
+								.InvokeIcon(BitmapDescriptorFactory.FromBitmap(stationBitmap))
 								.SetTitle(station.Name);
 							_map.AddMarker(markerOptions);
 						}

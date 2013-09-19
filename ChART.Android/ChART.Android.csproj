@@ -91,8 +91,8 @@
     <AndroidResource Include="..\StationImages\Diamante.png">
       <Link>Resources\drawable\Diamante.png</Link>
     </AndroidResource>
-    <AndroidResource Include="..\StationImages\División_del_Norte.png">
-      <Link>Resources\drawable\División_del_Norte.png</Link>
+    <AndroidResource Include="..\StationImages\Division_del_Norte.png">
+      <Link>Resources\drawable\Division_del_Norte.png</Link>
     </AndroidResource>
     <AndroidResource Include="..\StationImages\Fresno.png">
       <Link>Resources\drawable\Fresno.png</Link>
@@ -118,8 +118,8 @@
     <AndroidResource Include="..\StationImages\Juan_Escutia.png">
       <Link>Resources\drawable\Juan_Escutia.png</Link>
     </AndroidResource>
-    <AndroidResource Include="..\StationImages\Juárez.png">
-      <Link>Resources\drawable\Juárez.png</Link>
+    <AndroidResource Include="..\StationImages\Juarez.png">
+      <Link>Resources\drawable\Juarez.png</Link>
     </AndroidResource>
     <AndroidResource Include="..\StationImages\Justicia.png">
       <Link>Resources\drawable\Justicia.png</Link>
@@ -133,12 +133,6 @@
     <AndroidResource Include="..\StationImages\Morelos.png">
       <Link>Resources\drawable\Morelos.png</Link>
     </AndroidResource>
-    <AndroidResource Include="..\StationImages\Niños_Héroes.png">
-      <Link>Resources\drawable\Niños_Héroes.png</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\StationImages\Nueva_España.png">
-      <Link>Resources\drawable\Nueva_España.png</Link>
-    </AndroidResource>
     <AndroidResource Include="..\StationImages\Ochoa.png">
       <Link>Resources\drawable\Ochoa.png</Link>
     </AndroidResource>
@@ -148,8 +142,8 @@
     <AndroidResource Include="..\StationImages\Pino.png">
       <Link>Resources\drawable\Pino.png</Link>
     </AndroidResource>
-    <AndroidResource Include="..\StationImages\Policía_Federal.png">
-      <Link>Resources\drawable\Policía_Federal.png</Link>
+    <AndroidResource Include="..\StationImages\Policia_Federal.png">
+      <Link>Resources\drawable\Policia_Federal.png</Link>
     </AndroidResource>
     <AndroidResource Include="..\StationImages\Quinta_Gameros.png">
       <Link>Resources\drawable\Quinta_Gameros.png</Link>
@@ -157,11 +151,11 @@
     <AndroidResource Include="..\StationImages\SCT.png">
       <Link>Resources\drawable\SCT.png</Link>
     </AndroidResource>
-    <AndroidResource Include="..\StationImages\Sagrado_Corazón.png">
-      <Link>Resources\drawable\Sagrado_Corazón.png</Link>
+    <AndroidResource Include="..\StationImages\Sagrado_Corazon.png">
+      <Link>Resources\drawable\Sagrado_Corazon.png</Link>
     </AndroidResource>
-    <AndroidResource Include="..\StationImages\San_José.png">
-      <Link>Resources\drawable\San_José.png</Link>
+    <AndroidResource Include="..\StationImages\San_Jose.png">
+      <Link>Resources\drawable\San_Jose.png</Link>
     </AndroidResource>
     <AndroidResource Include="..\StationImages\Santa_Rita.png">
       <Link>Resources\drawable\Santa_Rita.png</Link>
@@ -198,6 +192,12 @@
     </AndroidResource>
     <AndroidResource Include="..\StationImages\Zaragoza.png">
       <Link>Resources\drawable\Zaragoza.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Ninos_Heroes.png">
+      <Link>Resources\drawable\Ninos_Heroes.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\StationImages\Nueva_Espana.png">
+      <Link>Resources\drawable\Nueva_Espana.png</Link>
     </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />

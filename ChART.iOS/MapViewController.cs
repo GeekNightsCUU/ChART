@@ -126,7 +126,7 @@ namespace ChART.iOS
 					var stationPosition = new CLLocationCoordinate2D(station.Latitude, station.Longitude);
 					Marker marker = Marker.FromPosition(stationPosition);
 					marker.Title = station.Name;
-					var stationIcon = UIImage.FromFile ("StationImages/" + station.ImageFilename ());
+					var stationIcon = UIImage.FromFile ("StationImages/" + station.ImageFilename () + ".png");
 					marker.Icon = MainViewController.ResizedImageIcon(stationIcon);
 					marker.Map = mapView;
 				}	
