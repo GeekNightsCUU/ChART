@@ -79,6 +79,7 @@ namespace ChART.Android
 			set {
 				this._station = value;
 				progressDialog.Dismiss ();
+				closestStationButton.Enabled = true;
 				var centerPoint = new LatLng (_station.Latitude, _station.Longitude);
 				_map.AnimateCamera(CameraUpdateFactory.NewLatLngZoom(centerPoint,15.0f));
 				new AlertDialog.Builder (Activity).SetTitle ("Estación más cercana").SetMessage (_station.Name).SetNeutralButton ("Ok", delegate {}).Show ();
@@ -93,6 +94,7 @@ namespace ChART.Android
 					progressDialog = new ProgressDialog(Activity);
 					progressDialog.SetMessage("Buscando estación cercana...");
 					progressDialog.Show();
+					closestStationButton.Enabled = false;
 					progressDialog.SetCanceledOnTouchOutside(false);
 					progressDialog.SetCancelable(false);
 					StationGeolocationUtil.CurrentClosestStation (stations, this, scheduler, new Geolocator(Activity));
