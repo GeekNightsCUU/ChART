@@ -32,7 +32,9 @@ namespace ChART.Android
 
 		protected override void OnCreate (Bundle bundle)
 		{
-			SetTheme (Resource.Style.Theme_Sherlock);
+			RequestWindowFeature (global::Android.Views.WindowFeatures.NoTitle);
+			Window.SetFlags (global::Android.Views.WindowManagerFlags.Fullscreen, global::Android.Views.WindowManagerFlags.Fullscreen);
+			SetTheme (Resource.Style.Theme_Sherlock_Light);
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.MainNavigation);
 			stationRepository = new WebStationRepository ();
@@ -50,6 +52,8 @@ namespace ChART.Android
 				tab.SetTabListener (this);
 				SupportActionBar.AddTab (tab);
 			}
+			SupportActionBar.SetDisplayShowTitleEnabled (false);
+			SupportActionBar.SetDisplayShowHomeEnabled (false);
 		}
 
 		protected override void OnResume ()
