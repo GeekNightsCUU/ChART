@@ -71,12 +71,12 @@
   		"elements":[
   			{
   				"type":"string",
-  				"caption":"¿Que es el carril exlusivo Vivebus?",
+  				"caption":"¿Que es el carril exclusivo Vivebus?",
   				"font":"Helvetica-20"
   			},
   			{
       			"type": "string",
-      			"caption": "El sistema BRT Vivebus cuenta con un carril exclusivo por el cual solo pueden circular camiones del mismo sistema. En situaciones de emergencia otros vehículos oficiales como ambulacias o patrullas podrán circular por el carril. En ningún momento un automóvil particular podrá circular por el carril exclusivo.",
+      			"caption": "El sistema BRT Vivebus cuenta con un carril exclusivo por el cual solo pueden circular camiones del mismo sistema. En situaciones de emergencia otros vehículos oficiales como ambulancias o patrullas podrán circular por el carril. En ningún momento un automóvil particular podrá circular por el carril exclusivo.",
       			"font":"Helvetica-14",
       			"lines": "8",
       			"linebreak": "word-wrap"
