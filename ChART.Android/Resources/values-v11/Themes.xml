@@ -1,5 +1,5 @@
 <resources>
-    <style name="ChARTTheme" parent="@android:style/Theme.Light">
+    <style name="ChARTTheme" parent="@android:style/Theme">
         <!-- Any customizations for your app running on devices with Theme.Holo here -->
     </style>
 </resources>

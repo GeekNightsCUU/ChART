@@ -1237,14 +1237,14 @@ namespace ChART.Android
 			// aapt resource value: 0x7f050038
 			public const int map = 2131034168;
 			
-			// aapt resource value: 0x7f050036
-			public const int mapLayout = 2131034166;
-			
 			// aapt resource value: 0x7f050000
 			public const int none = 2131034112;
 			
 			// aapt resource value: 0x7f050001
 			public const int normal = 2131034113;
+			
+			// aapt resource value: 0x7f050036
+			public const int pager = 2131034166;
 			
 			// aapt resource value: 0x7f050002
 			public const int satellite = 2131034114;
@@ -1300,76 +1300,85 @@ namespace ChART.Android
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int abs__action_bar_home = 2130903040;
+			public const int AboutNavigation = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int abs__action_bar_tab = 2130903041;
+			public const int abs__action_bar_home = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int abs__action_bar_tab_bar_view = 2130903042;
+			public const int abs__action_bar_tab = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int abs__action_bar_title_item = 2130903043;
+			public const int abs__action_bar_tab_bar_view = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int abs__action_menu_item_layout = 2130903044;
+			public const int abs__action_bar_title_item = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int abs__action_menu_layout = 2130903045;
+			public const int abs__action_menu_item_layout = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int abs__action_mode_bar = 2130903046;
+			public const int abs__action_menu_layout = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int abs__action_mode_close_item = 2130903047;
+			public const int abs__action_mode_bar = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int abs__activity_chooser_view = 2130903048;
+			public const int abs__action_mode_close_item = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int abs__activity_chooser_view_list_item = 2130903049;
+			public const int abs__activity_chooser_view = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int abs__list_menu_item_checkbox = 2130903050;
+			public const int abs__activity_chooser_view_list_item = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int abs__list_menu_item_icon = 2130903051;
+			public const int abs__list_menu_item_checkbox = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int abs__list_menu_item_radio = 2130903052;
+			public const int abs__list_menu_item_icon = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int abs__popup_menu_item_layout = 2130903053;
+			public const int abs__list_menu_item_radio = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int abs__screen_action_bar = 2130903054;
+			public const int abs__popup_menu_item_layout = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int abs__screen_action_bar_overlay = 2130903055;
+			public const int abs__screen_action_bar = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int abs__screen_simple = 2130903056;
+			public const int abs__screen_action_bar_overlay = 2130903056;
 			
 			// aapt resource value: 0x7f030011
-			public const int abs__screen_simple_overlay_action_mode = 2130903057;
+			public const int abs__screen_simple = 2130903057;
 			
 			// aapt resource value: 0x7f030012
-			public const int abs__search_dropdown_item_icons_2line = 2130903058;
+			public const int abs__screen_simple_overlay_action_mode = 2130903058;
 			
 			// aapt resource value: 0x7f030013
-			public const int abs__search_view = 2130903059;
+			public const int abs__search_dropdown_item_icons_2line = 2130903059;
 			
 			// aapt resource value: 0x7f030014
-			public const int abs__simple_dropdown_hint = 2130903060;
+			public const int abs__search_view = 2130903060;
 			
 			// aapt resource value: 0x7f030015
-			public const int MainNavigation = 2130903061;
+			public const int abs__simple_dropdown_hint = 2130903061;
 			
 			// aapt resource value: 0x7f030016
-			public const int sherlock_spinner_dropdown_item = 2130903062;
+			public const int FAQSNavigation = 2130903062;
 			
 			// aapt resource value: 0x7f030017
-			public const int sherlock_spinner_item = 2130903063;
+			public const int MainNavigation = 2130903063;
+			
+			// aapt resource value: 0x7f030018
+			public const int MapNavigation = 2130903064;
+			
+			// aapt resource value: 0x7f030019
+			public const int sherlock_spinner_dropdown_item = 2130903065;
+			
+			// aapt resource value: 0x7f03001a
+			public const int sherlock_spinner_item = 2130903066;
 			
 			static Layout()
 			{

@@ -59,6 +59,10 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewPagerAdapter.cs" />
+    <Compile Include="MapsFragment.cs" />
+    <Compile Include="FAQSFragment.cs" />
+    <Compile Include="AboutFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -67,7 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
-    <AndroidResource Include="Resources\layout\MainNavigation.axml" />
     <AndroidResource Include="Resources\values\Themes.xml" />
     <AndroidResource Include="Resources\values-v11\Themes.xml" />
     <AndroidResource Include="..\StationImages\Arquitectura.png">
@@ -199,6 +202,10 @@
     <AndroidResource Include="..\StationImages\Nueva_Espana.png">
       <Link>Resources\drawable\Nueva_Espana.png</Link>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\MapNavigation.axml" />
+    <AndroidResource Include="Resources\layout\MainNavigation.xml" />
+    <AndroidResource Include="Resources\layout\FAQSNavigation.xml" />
+    <AndroidResource Include="Resources\layout\AboutNavigation.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
