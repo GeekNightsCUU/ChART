@@ -87,15 +87,17 @@ namespace ChART.Android
 
 		private void FindClosestStation ()
 		{
-			Activity.RunOnUiThread (() => {
-				TaskScheduler scheduler = TaskScheduler.FromCurrentSynchronizationContext ();
-				progressDialog = new ProgressDialog(Activity);
-				progressDialog.SetMessage("Buscando estación cercana...");
-				progressDialog.Show();
-				progressDialog.SetCanceledOnTouchOutside(false);
-				progressDialog.SetCancelable(false);
-				StationGeolocationUtil.CurrentClosestStation (stations, this, scheduler, new Geolocator(Activity));
-			});
+			if (stations != null) {
+				Activity.RunOnUiThread (() => {
+					TaskScheduler scheduler = TaskScheduler.FromCurrentSynchronizationContext ();
+					progressDialog = new ProgressDialog(Activity);
+					progressDialog.SetMessage("Buscando estación cercana...");
+					progressDialog.Show();
+					progressDialog.SetCanceledOnTouchOutside(false);
+					progressDialog.SetCancelable(false);
+					StationGeolocationUtil.CurrentClosestStation (stations, this, scheduler, new Geolocator(Activity));
+				});
+			}
 		}
 
 		private void InitMapFragment()

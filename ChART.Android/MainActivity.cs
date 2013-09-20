@@ -1,20 +1,9 @@
 using System;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Linq;
 using Android.OS;
-using Android.Gms.Maps;
 using Android.App;
-using Android.Gms.Maps.Model;
-using Android.Graphics;
-using Android.Widget;
 using Xamarin.ActionbarSherlockBinding.App;
 using SherlockActionBar = Xamarin.ActionbarSherlockBinding.App.ActionBar;
 using FragmentTransaction = Android.Support.V4.App.FragmentTransaction;
-using ChART.DataAccess.Concrete;
-using ChART.Mobile;
-using ChART.Domain.Entities;
-using Xamarin.Geolocation;
 using Android.Support.V4.View;
 
 namespace ChART.Android
@@ -27,8 +16,6 @@ namespace ChART.Android
 
 		protected override void OnCreate (Bundle bundle)
 		{
-			RequestWindowFeature (global::Android.Views.WindowFeatures.NoTitle);
-			Window.SetFlags (global::Android.Views.WindowManagerFlags.Fullscreen, global::Android.Views.WindowManagerFlags.Fullscreen);
 			SetTheme (Resource.Style.Theme_Sherlock_Light);
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.MainNavigation);

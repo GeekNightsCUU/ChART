@@ -8,7 +8,7 @@
 	<!-- We need to be able to download map tiles and access Google Play Services-->
 	<uses-permission android:name="android.permission.INTERNET" />
 	<!-- Allow the application to access Google web-based services. -->
-	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 	<!-- Google Maps for Android v2 will cache map tiles on external storage -->
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<!-- Google Maps for Android v2 needs this permission so that it may check the connection state as it must download data -->
@@ -17,6 +17,6 @@
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<!-- Notice here that we have the package name of our application as a prefix on the permissions. -->
-	<permission android:name="com.geeknightscuu.chart.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+	<permission android:name="com.geeknightscuu.chart.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
 	<uses-permission android:name="com.geeknightscuu.chart.permission.MAPS_RECEIVE" />
 </manifest>
