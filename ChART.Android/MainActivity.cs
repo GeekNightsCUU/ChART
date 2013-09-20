@@ -5,10 +5,11 @@ using Xamarin.ActionbarSherlockBinding.App;
 using SherlockActionBar = Xamarin.ActionbarSherlockBinding.App.ActionBar;
 using FragmentTransaction = Android.Support.V4.App.FragmentTransaction;
 using Android.Support.V4.View;
+using Android.Content.PM;
 
 namespace ChART.Android
 {
-	[Activity (Label = "ChARTCUU", MainLauncher = true)]
+	[Activity (Label = "ChARTCUU", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
 	public class MainActivity : SherlockFragmentActivity, SherlockActionBar.ITabListener
 	{
 		private ViewPager Pager;
