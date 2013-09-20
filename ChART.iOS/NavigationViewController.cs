@@ -31,7 +31,6 @@ namespace ChART.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			NavigationBar.TintColor = UIColor.Black;
 			var item = new UINavigationItem (this.title);
 			UIBarButtonItem button = new UIBarButtonItem (MainViewController.ResizedImageIcon(UIImage.FromFile("menu.png")), UIBarButtonItemStyle.Bordered, delegate {
 				navigation.ToggleMenu();

@@ -68,13 +68,15 @@ namespace ChART.iOS
 			var bounds = UIScreen.MainScreen.Bounds;
 
 			CameraPosition cameraPosition = CameraPosition.FromCamera (centerCoordinate, 14.0f);
-			var map = MapView.FromCamera (new RectangleF (0, 44, bounds.Width, bounds.Height - 60), cameraPosition);
+			var map = MapView.FromCamera (new RectangleF (0, 64, bounds.Width, bounds.Height - 60), cameraPosition);
 			map.MyLocationEnabled = true;
 			map.MapType = MapViewType.Normal;
 
 			this.mapView = map;
+			if (float.Parse (UIDevice.CurrentDevice.SystemVersion) >= MainViewController.CurrentVersion) {
+				NavigationBar.Frame = new RectangleF (NavigationBar.Frame.X, NavigationBar.Frame.Y, NavigationBar.Frame.Width, 64.0f);
+			}
 
-			NavigationBar.TintColor = UIColor.Black;
 			var item = new UINavigationItem ("Transporte Público Chihuahua");
 			UIBarButtonItem button = new UIBarButtonItem (MainViewController.ResizedImageIcon(UIImage.FromFile("menu.png")), UIBarButtonItemStyle.Bordered, delegate {
 				navigation.ToggleMenu();
