@@ -13,7 +13,7 @@ namespace ChART.DataAccess.Concrete
 {
     public class WebStationRepository: IStationRepository
     {
-        private static readonly string ChARTServiceUrl = "https://chart.apphb.com/";
+        private static readonly string ChARTServiceUrl = "http://chart.apphb.com/";
         private static readonly string StationsEndpoint = ChARTServiceUrl + "api/routes";  
 		private static readonly string RoutesFile = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments), "routes.json");
 
