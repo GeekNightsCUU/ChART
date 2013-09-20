@@ -45,6 +45,13 @@ namespace ChART.Android
 			ThreadPool.QueueUserWorkItem (o => {
 				SetupMapIfNeeded ();
 			});
+			closestStationButton.Enabled = true;
+		}
+
+		public override void OnActivityCreated (Bundle savedInstanceState)
+		{
+			base.OnActivityCreated (savedInstanceState);
+			InitMapFragment();
 		}
 
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -56,7 +63,6 @@ namespace ChART.Android
 			closestStationButton.Click += delegate {
 				FindClosestStation();
 			};
-			InitMapFragment();
 			return view;
 		}
 
@@ -94,14 +100,14 @@ namespace ChART.Android
 
 		private void InitMapFragment()
 		{
-			_mapFragment = Activity.SupportFragmentManager.FindFragmentByTag("map") as SupportMapFragment;
+			_mapFragment = ChildFragmentManager.FindFragmentByTag("map") as SupportMapFragment;
 			if (_mapFragment == null)
 			{
 				GoogleMapOptions mapOptions = new GoogleMapOptions()
 					.InvokeMapType(GoogleMap.MapTypeNormal)
-						.InvokeZoomControlsEnabled(false)
-						.InvokeCompassEnabled(true);
-				var fm = Activity.SupportFragmentManager;
+					.InvokeZoomControlsEnabled(false)
+					.InvokeCompassEnabled(true);
+				var fm = ChildFragmentManager;
 				FragmentTransaction fragTx = fm.BeginTransaction ();
 				_mapFragment = SupportMapFragment.NewInstance(mapOptions);
 				fragTx.Add(Resource.Id.map, _mapFragment, "map");
@@ -143,7 +149,6 @@ namespace ChART.Android
 							polylineOptions.Add(new LatLng(point.Y, point.X));
 						}
 						_map.AddPolyline(polylineOptions);
-						closestStationButton.Enabled = true;
 					});
 				}
 			}
