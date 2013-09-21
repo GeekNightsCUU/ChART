@@ -51,6 +51,7 @@ namespace ChART.iOS
 				if(touch.View.Superview.GetType() == typeof(MapView)){
 					return false;
 				}else{
+
 					return true;
 				}
 			};
