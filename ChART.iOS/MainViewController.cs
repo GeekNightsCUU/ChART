@@ -9,7 +9,7 @@ namespace ChART.iOS
 {
 	public partial class MainViewController : UIViewController
 	{
-		public static UIColor MainBackgroundColor = UIColor.FromRGB(30,30,30);
+		public static readonly float CurrentVersion = 7.0f;
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
@@ -46,11 +46,7 @@ namespace ChART.iOS
 			};
 			navigation.View.Frame = UIScreen.MainScreen.Bounds;
 			navigation.HideShadow = false;
-			navigation.NavigationTableView.BackgroundColor = MainBackgroundColor;
-			navigation.NavigationTableView.SeparatorColor = UIColor.DarkGray;
-			navigation.NavigationTableView.Delegate = new NavigationTableViewDelegate ();
 			View.AddSubview (navigation.View);
-			// Perform any additional setup after loading the view, typically from a nib.
 		}
 
 		public static UIImage ResizedImageIcon(UIImage image)
@@ -62,15 +58,6 @@ namespace ChART.iOS
 
 		public static void VisitCommunity(object obj){
 			UIApplication.SharedApplication.OpenUrl (new NSUrl ("https://plus.google.com/communities/113864651382277557583"));
-		}
-	}
-
-	class NavigationTableViewDelegate : UITableViewDelegate
-	{
-		public override void WillDisplay (UITableView tableView, UITableViewCell cell, NSIndexPath indexPath)
-		{
-			cell.TextLabel.TextColor = UIColor.White;
-			cell.TextLabel.HighlightedTextColor = UIColor.DarkGray;
 		}
 	}
 }
