@@ -63,4 +63,40 @@
         android:layout_centerHorizontal="true"
         android:autoLink="web"
         android:linksClickable="true" />
+    <ImageView
+        android:id="@+id/imageView_twitter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/twitter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="0.0dp"
+        android:minWidth="60dp"
+        android:scaleType="fitXY"
+        android:maxWidth="3dp" />
+    <ImageView
+        android:id="@+id/imageView_facebook"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/facebook"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="0.0dp"
+        android:minWidth="60dp"
+        android:scaleType="fitXY"
+        android:maxWidth="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp" />
+    <ImageView
+        android:id="@+id/imageView_plus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/plus"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="50dp"
+        android:minWidth="60dp"
+        android:scaleType="fitXY"
+        android:maxWidth="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true" />
 </RelativeLayout>

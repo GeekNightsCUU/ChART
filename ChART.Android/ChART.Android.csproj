@@ -45,14 +45,14 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Android.Support.v4" />
-    <Reference Include="ActionBarSherlock">
-      <HintPath>..\Components\XamarinActionBarSherlock-4.4.0\lib\android\ActionBarSherlock.dll</HintPath>
+    <Reference Include="Xamarin.Mobile">
+      <HintPath>..\Components\xamarin.mobile-0.6.3\lib\android\Xamarin.Mobile.dll</HintPath>
     </Reference>
     <Reference Include="GooglePlayServicesFroyoLib">
       <HintPath>..\Components\googleplayservicesfroyo10-10.0\lib\android\GooglePlayServicesFroyoLib.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Mobile">
-      <HintPath>..\Components\xamarin.mobile-0.6.3\lib\android\Xamarin.Mobile.dll</HintPath>
+    <Reference Include="ActionBarSherlock">
+      <HintPath>..\Components\XamarinActionBarSherlock-4.4.0\lib\android\ActionBarSherlock.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -206,6 +206,9 @@
     <AndroidResource Include="Resources\layout\MainNavigation.xml" />
     <AndroidResource Include="Resources\layout\FAQSNavigation.xml" />
     <AndroidResource Include="Resources\layout\AboutNavigation.xml" />
+    <AndroidResource Include="Resources\drawable\twitter.png" />
+    <AndroidResource Include="Resources\drawable\facebook.png" />
+    <AndroidResource Include="Resources\drawable\plus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

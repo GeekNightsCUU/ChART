@@ -984,112 +984,121 @@ namespace ChART.Android
 			public const int Division_del_Norte = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int Fresno = 2130837648;
+			public const int facebook = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int Fuentes_Danzarinas = 2130837649;
+			public const int Fresno = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int Fuentes_Mares = 2130837650;
+			public const int Fuentes_Danzarinas = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int Gemas = 2130837651;
+			public const int Fuentes_Mares = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int IMSS = 2130837652;
+			public const int Gemas = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int Independencia = 2130837653;
+			public const int IMSS = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ISSSTE = 2130837654;
+			public const int Independencia = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int Juan_Escutia = 2130837655;
+			public const int ISSSTE = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int Juarez = 2130837656;
+			public const int Juan_Escutia = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int Justicia = 2130837657;
+			public const int Juarez = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int Karike = 2130837658;
+			public const int Justicia = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int La_Villita = 2130837659;
+			public const int Karike = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int monoandroidsplash = 2130837660;
+			public const int La_Villita = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int Morelos = 2130837661;
+			public const int monoandroidsplash = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int Ninos_Heroes = 2130837662;
+			public const int Morelos = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int Nueva_Espana = 2130837663;
+			public const int Ninos_Heroes = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int Ochoa = 2130837664;
+			public const int Nueva_Espana = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int Parque_Lerdo = 2130837665;
+			public const int Ochoa = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int Pino = 2130837666;
+			public const int Parque_Lerdo = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int Policia_Federal = 2130837667;
+			public const int Pino = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int Quinta_Gameros = 2130837668;
+			public const int plus = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int Sagrado_Corazon = 2130837669;
+			public const int Policia_Federal = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int San_Jose = 2130837670;
+			public const int Quinta_Gameros = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int Santa_Rita = 2130837671;
+			public const int Sagrado_Corazon = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int SCT = 2130837672;
+			public const int San_Jose = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int Sexta = 2130837673;
+			public const int Santa_Rita = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int Sicomoro = 2130837674;
+			public const int SCT = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int Sor_Juana = 2130837675;
+			public const int Sexta = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int Terminal_Norte = 2130837676;
+			public const int Sicomoro = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int Terminal_Sur = 2130837677;
+			public const int Sor_Juana = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int Trebol = 2130837678;
+			public const int Terminal_Norte = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int Universidad = 2130837679;
+			public const int Terminal_Sur = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int Urquidi = 2130837680;
+			public const int Trebol = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int Urueta = 2130837681;
+			public const int twitter = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int Zapata = 2130837682;
+			public const int Universidad = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int Zaragoza = 2130837683;
+			public const int Urquidi = 2130837683;
+			
+			// aapt resource value: 0x7f0200b4
+			public const int Urueta = 2130837684;
+			
+			// aapt resource value: 0x7f0200b5
+			public const int Zapata = 2130837685;
+			
+			// aapt resource value: 0x7f0200b6
+			public const int Zaragoza = 2130837686;
 			
 			static Drawable()
 			{
@@ -1104,20 +1113,20 @@ namespace ChART.Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050024
-			public const int abs__action_bar = 2131034148;
+			// aapt resource value: 0x7f050027
+			public const int abs__action_bar = 2131034151;
 			
-			// aapt resource value: 0x7f050023
-			public const int abs__action_bar_container = 2131034147;
+			// aapt resource value: 0x7f050026
+			public const int abs__action_bar_container = 2131034150;
 			
-			// aapt resource value: 0x7f050015
-			public const int abs__action_bar_subtitle = 2131034133;
+			// aapt resource value: 0x7f050018
+			public const int abs__action_bar_subtitle = 2131034136;
 			
-			// aapt resource value: 0x7f050014
-			public const int abs__action_bar_title = 2131034132;
+			// aapt resource value: 0x7f050017
+			public const int abs__action_bar_title = 2131034135;
 			
-			// aapt resource value: 0x7f050025
-			public const int abs__action_context_bar = 2131034149;
+			// aapt resource value: 0x7f050028
+			public const int abs__action_context_bar = 2131034152;
 			
 			// aapt resource value: 0x7f050010
 			public const int abs__action_menu_divider = 2131034128;
@@ -1125,44 +1134,44 @@ namespace ChART.Android
 			// aapt resource value: 0x7f050011
 			public const int abs__action_menu_presenter = 2131034129;
 			
-			// aapt resource value: 0x7f050029
-			public const int abs__action_mode_bar = 2131034153;
+			// aapt resource value: 0x7f05002c
+			public const int abs__action_mode_bar = 2131034156;
 			
-			// aapt resource value: 0x7f050028
-			public const int abs__action_mode_bar_stub = 2131034152;
+			// aapt resource value: 0x7f05002b
+			public const int abs__action_mode_bar_stub = 2131034155;
 			
-			// aapt resource value: 0x7f050018
-			public const int abs__action_mode_close_button = 2131034136;
-			
-			// aapt resource value: 0x7f050019
-			public const int abs__activity_chooser_view_content = 2131034137;
-			
-			// aapt resource value: 0x7f050020
-			public const int abs__checkbox = 2131034144;
-			
-			// aapt resource value: 0x7f050026
-			public const int abs__content = 2131034150;
+			// aapt resource value: 0x7f05001b
+			public const int abs__action_mode_close_button = 2131034139;
 			
 			// aapt resource value: 0x7f05001c
-			public const int abs__default_activity_button = 2131034140;
+			public const int abs__activity_chooser_view_content = 2131034140;
 			
-			// aapt resource value: 0x7f05001a
-			public const int abs__expand_activities_button = 2131034138;
+			// aapt resource value: 0x7f050023
+			public const int abs__checkbox = 2131034147;
+			
+			// aapt resource value: 0x7f050029
+			public const int abs__content = 2131034153;
+			
+			// aapt resource value: 0x7f05001f
+			public const int abs__default_activity_button = 2131034143;
+			
+			// aapt resource value: 0x7f05001d
+			public const int abs__expand_activities_button = 2131034141;
 			
 			// aapt resource value: 0x7f05000e
 			public const int abs__home = 2131034126;
 			
+			// aapt resource value: 0x7f050021
+			public const int abs__icon = 2131034145;
+			
 			// aapt resource value: 0x7f05001e
-			public const int abs__icon = 2131034142;
+			public const int abs__image = 2131034142;
 			
-			// aapt resource value: 0x7f05001b
-			public const int abs__image = 2131034139;
+			// aapt resource value: 0x7f050019
+			public const int abs__imageButton = 2131034137;
 			
-			// aapt resource value: 0x7f050016
-			public const int abs__imageButton = 2131034134;
-			
-			// aapt resource value: 0x7f05001d
-			public const int abs__list_item = 2131034141;
+			// aapt resource value: 0x7f050020
+			public const int abs__list_item = 2131034144;
 			
 			// aapt resource value: 0x7f050012
 			public const int abs__progress_circular = 2131034130;
@@ -1170,65 +1179,65 @@ namespace ChART.Android
 			// aapt resource value: 0x7f050013
 			public const int abs__progress_horizontal = 2131034131;
 			
-			// aapt resource value: 0x7f050021
-			public const int abs__radio = 2131034145;
-			
-			// aapt resource value: 0x7f05002c
-			public const int abs__search_badge = 2131034156;
-			
-			// aapt resource value: 0x7f05002b
-			public const int abs__search_bar = 2131034155;
-			
-			// aapt resource value: 0x7f05002d
-			public const int abs__search_button = 2131034157;
-			
-			// aapt resource value: 0x7f050032
-			public const int abs__search_close_btn = 2131034162;
-			
-			// aapt resource value: 0x7f05002e
-			public const int abs__search_edit_frame = 2131034158;
-			
-			// aapt resource value: 0x7f050034
-			public const int abs__search_go_btn = 2131034164;
+			// aapt resource value: 0x7f050024
+			public const int abs__radio = 2131034148;
 			
 			// aapt resource value: 0x7f05002f
-			public const int abs__search_mag_icon = 2131034159;
+			public const int abs__search_badge = 2131034159;
+			
+			// aapt resource value: 0x7f05002e
+			public const int abs__search_bar = 2131034158;
 			
 			// aapt resource value: 0x7f050030
-			public const int abs__search_plate = 2131034160;
-			
-			// aapt resource value: 0x7f050031
-			public const int abs__search_src_text = 2131034161;
+			public const int abs__search_button = 2131034160;
 			
 			// aapt resource value: 0x7f050035
-			public const int abs__search_voice_btn = 2131034165;
+			public const int abs__search_close_btn = 2131034165;
 			
-			// aapt resource value: 0x7f050022
-			public const int abs__shortcut = 2131034146;
+			// aapt resource value: 0x7f050031
+			public const int abs__search_edit_frame = 2131034161;
 			
-			// aapt resource value: 0x7f050027
-			public const int abs__split_action_bar = 2131034151;
+			// aapt resource value: 0x7f050037
+			public const int abs__search_go_btn = 2131034167;
+			
+			// aapt resource value: 0x7f050032
+			public const int abs__search_mag_icon = 2131034162;
 			
 			// aapt resource value: 0x7f050033
-			public const int abs__submit_area = 2131034163;
+			public const int abs__search_plate = 2131034163;
 			
-			// aapt resource value: 0x7f050017
-			public const int abs__textButton = 2131034135;
+			// aapt resource value: 0x7f050034
+			public const int abs__search_src_text = 2131034164;
 			
-			// aapt resource value: 0x7f05001f
-			public const int abs__title = 2131034143;
+			// aapt resource value: 0x7f050038
+			public const int abs__search_voice_btn = 2131034168;
+			
+			// aapt resource value: 0x7f050025
+			public const int abs__shortcut = 2131034149;
+			
+			// aapt resource value: 0x7f05002a
+			public const int abs__split_action_bar = 2131034154;
+			
+			// aapt resource value: 0x7f050036
+			public const int abs__submit_area = 2131034166;
+			
+			// aapt resource value: 0x7f05001a
+			public const int abs__textButton = 2131034138;
+			
+			// aapt resource value: 0x7f050022
+			public const int abs__title = 2131034146;
 			
 			// aapt resource value: 0x7f05000f
 			public const int abs__up = 2131034127;
 			
-			// aapt resource value: 0x7f050038
-			public const int closestStation = 2131034168;
+			// aapt resource value: 0x7f05003b
+			public const int closestStation = 2131034171;
 			
 			// aapt resource value: 0x7f05000d
 			public const int disableHome = 2131034125;
 			
-			// aapt resource value: 0x7f05002a
-			public const int edit_query = 2131034154;
+			// aapt resource value: 0x7f05002d
+			public const int edit_query = 2131034157;
 			
 			// aapt resource value: 0x7f05000a
 			public const int homeAsUp = 2131034122;
@@ -1236,11 +1245,20 @@ namespace ChART.Android
 			// aapt resource value: 0x7f050004
 			public const int hybrid = 2131034116;
 			
+			// aapt resource value: 0x7f050015
+			public const int imageView_facebook = 2131034133;
+			
+			// aapt resource value: 0x7f050016
+			public const int imageView_plus = 2131034134;
+			
+			// aapt resource value: 0x7f050014
+			public const int imageView_twitter = 2131034132;
+			
 			// aapt resource value: 0x7f050006
 			public const int listMode = 2131034118;
 			
-			// aapt resource value: 0x7f050039
-			public const int map = 2131034169;
+			// aapt resource value: 0x7f05003c
+			public const int map = 2131034172;
 			
 			// aapt resource value: 0x7f050000
 			public const int none = 2131034112;
@@ -1248,8 +1266,8 @@ namespace ChART.Android
 			// aapt resource value: 0x7f050001
 			public const int normal = 2131034113;
 			
-			// aapt resource value: 0x7f050037
-			public const int pager = 2131034167;
+			// aapt resource value: 0x7f05003a
+			public const int pager = 2131034170;
 			
 			// aapt resource value: 0x7f050002
 			public const int satellite = 2131034114;
@@ -1269,8 +1287,8 @@ namespace ChART.Android
 			// aapt resource value: 0x7f050003
 			public const int terrain = 2131034115;
 			
-			// aapt resource value: 0x7f050036
-			public const int text = 2131034166;
+			// aapt resource value: 0x7f050039
+			public const int text = 2131034169;
 			
 			// aapt resource value: 0x7f050008
 			public const int useLogo = 2131034120;
