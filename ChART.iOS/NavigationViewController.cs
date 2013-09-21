@@ -31,6 +31,9 @@ namespace ChART.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+			if (float.Parse (UIDevice.CurrentDevice.SystemVersion) >= MainViewController.CurrentVersion) {
+				NavigationBar.Frame = new RectangleF (NavigationBar.Frame.X, NavigationBar.Frame.Y, NavigationBar.Frame.Width, 64.0f);
+			}
 			var item = new UINavigationItem (this.title);
 			UIBarButtonItem button = new UIBarButtonItem (MainViewController.ResizedImageIcon(UIImage.FromFile("menu.png")), UIBarButtonItemStyle.Bordered, delegate {
 				navigation.ToggleMenu();

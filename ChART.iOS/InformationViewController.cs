@@ -22,8 +22,13 @@ namespace ChART.iOS
 		{
 			base.ViewDidLoad ();
 			var bounds = UIScreen.MainScreen.Bounds;
-			navigationViewController.View.Frame = new RectangleF (0, 0, bounds.Width, 44);
-			dialogViewController.View.Frame = new RectangleF (0, 44, bounds.Width, bounds.Height - 44);
+			if (float.Parse (UIDevice.CurrentDevice.SystemVersion) >= MainViewController.CurrentVersion) {
+				navigationViewController.View.Frame = new RectangleF (0, 0, bounds.Width, 64);
+				dialogViewController.View.Frame = new RectangleF (0, 64, bounds.Width, bounds.Height - 44);
+			}else{
+				navigationViewController.View.Frame = new RectangleF (0, 0, bounds.Width, 44);
+				dialogViewController.View.Frame = new RectangleF (0, 44, bounds.Width, bounds.Height - 44);
+			}
 			this.AddChildViewController (navigationViewController);
 			this.View.AddSubview (navigationViewController.View);
 
@@ -35,8 +40,13 @@ namespace ChART.iOS
 		{
 			base.ViewWillLayoutSubviews ();
 			var bounds = UIScreen.MainScreen.Bounds;
-			navigationViewController.View.Frame = new RectangleF (0, 0, bounds.Width, 44);
-			dialogViewController.View.Frame = new RectangleF (0, 44, bounds.Width, bounds.Height - 44);
+			if (float.Parse (UIDevice.CurrentDevice.SystemVersion) >= MainViewController.CurrentVersion) {
+				navigationViewController.View.Frame = new RectangleF (0, 0, bounds.Width, 64);
+				dialogViewController.View.Frame = new RectangleF (0, 64, bounds.Width, bounds.Height - 44);
+			} else {
+				navigationViewController.View.Frame = new RectangleF (0, 0, bounds.Width, 44);
+				dialogViewController.View.Frame = new RectangleF (0, 44, bounds.Width, bounds.Height - 44);
+			}
 		}
 	}
 }
