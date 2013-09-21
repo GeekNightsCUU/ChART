@@ -83,6 +83,18 @@
       		},
       		{
   				"type":"string",
+  				"caption":"¿Que es el carril compartido?",
+  				"font":"Helvetica-20"
+  			},
+  			{
+      			"type": "string",
+      			"caption": "Para evitar accidentes se designó un carril compartido. Este carril en la Av. Ocampo desde la Av Niños Heroes hasta la Calle Aldama. En este tramo un automóvil particular puede circular por el carril del ViveBus para dar vuelta a la izquierda.",
+      			"font":"Helvetica-14",
+      			"lines": "8",
+      			"linebreak": "word-wrap"
+      		},
+      		{
+  				"type":"string",
   				"caption":"¿Que es la vuelta izquierda indirecta?",
   				"font":"Helvetica-20"
   			},
