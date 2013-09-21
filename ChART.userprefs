@@ -1,15 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="AppStore|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ChART.Domain/Resources/about.json">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.7.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChART.iOS/MapViewController.cs">
     <Files>
-      <File FileName="ChART.Domain/Resources/about.json" Line="15" Column="32" />
-      <File FileName="ChART.iOS/MainViewController.cs" Line="64" Column="114" />
-      <File FileName="ChART.Domain/Resources/faqs.json" Line="11" Column="7" />
+      <File FileName="ChART.iOS/MapViewController.cs" Line="74" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="ChART.iOS" selected="True" />
+          <Node name="ChART.iOS" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -18,4 +16,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ChART.Android AndroidDeviceId-Debug="015d483b66240815" MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" />
 </Properties>

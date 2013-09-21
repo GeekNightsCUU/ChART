@@ -32,7 +32,7 @@ namespace ChART.iOS
 			base.ViewDidLoad ();
 			var navigation = new FlyoutNavigationController () {
 				NavigationRoot = new RootElement("ViveBus"){
-					new Section("     "){
+					new Section("Menu"){
 						new StringElement ("Mapa"),
 						new StringElement ("FAQS"),
 						new StringElement ("Acerca de"),
@@ -47,7 +47,6 @@ namespace ChART.iOS
 			navigation.View.Frame = UIScreen.MainScreen.Bounds;
 			navigation.HideShadow = false;
 			View.AddSubview (navigation.View);
-			// Perform any additional setup after loading the view, typically from a nib.
 		}
 
 		public static UIImage ResizedImageIcon(UIImage image)
