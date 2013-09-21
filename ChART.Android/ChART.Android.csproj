@@ -45,14 +45,23 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Android.Support.v4" />
+<<<<<<< HEAD
+    <Reference Include="ActionBarSherlock">
+      <HintPath>..\Components\XamarinActionBarSherlock-4.4.0\lib\android\ActionBarSherlock.dll</HintPath>
+    </Reference>
+=======
+>>>>>>> 09467f38f6a04202f2e02196f0621711c9176d28
     <Reference Include="GooglePlayServicesFroyoLib">
       <HintPath>..\Components\googleplayservicesfroyo10-10.0\lib\android\GooglePlayServicesFroyoLib.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Mobile">
       <HintPath>..\Components\xamarin.mobile-0.6.3\lib\android\Xamarin.Mobile.dll</HintPath>
+<<<<<<< HEAD
+=======
     </Reference>
     <Reference Include="ActionBarSherlock">
       <HintPath>..\Components\XamarinActionBarSherlock-4.4.0\lib\android\ActionBarSherlock.dll</HintPath>
+>>>>>>> 09467f38f6a04202f2e02196f0621711c9176d28
     </Reference>
   </ItemGroup>
   <ItemGroup>
