@@ -4,6 +4,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using FlyoutNavigation;
 using MonoTouch.Dialog;
+using Google.Maps;
 
 namespace ChART.iOS
 {
@@ -46,6 +47,13 @@ namespace ChART.iOS
 			};
 			navigation.View.Frame = UIScreen.MainScreen.Bounds;
 			navigation.HideShadow = false;
+			navigation.ShouldReceiveTouch += (recognizer, touch) => {
+				if(touch.View.Superview.GetType() == typeof(MapView)){
+					return false;
+				}else{
+					return true;
+				}
+			};
 			View.AddSubview (navigation.View);
 		}
 
