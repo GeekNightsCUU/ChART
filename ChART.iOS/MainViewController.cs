@@ -46,7 +46,7 @@ namespace ChART.iOS
 				new InformationViewController(navigation,"Acerca de", "about.json"),
 			};
 			navigation.View.Frame = UIScreen.MainScreen.Bounds;
-			navigation.HideShadow = false;
+			navigation.HideShadow = true;
 			navigation.ShouldReceiveTouch += (recognizer, touch) => {
 				if(touch.View.Superview.GetType() == typeof(MapView)){
 					return false;
@@ -67,6 +67,15 @@ namespace ChART.iOS
 
 		public static void VisitCommunity(object obj){
 			UIApplication.SharedApplication.OpenUrl (new NSUrl ("https://plus.google.com/communities/113864651382277557583"));
+		}
+	}
+
+	class NavigationTableViewDelegate : UITableViewDelegate
+	{
+		public override void WillDisplay (UITableView tableView, UITableViewCell cell, NSIndexPath indexPath)
+		{
+			//			cell.TextLabel.TextColor = UIColor.White;
+			//			cell.TextLabel.HighlightedTextColor = UIColor.DarkGray;
 		}
 	}
 }

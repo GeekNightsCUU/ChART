@@ -108,17 +108,17 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="MonoTouch.Dialog-1" />
-    <Reference Include="FlyoutNavigation">
-      <HintPath>..\Components\flyoutnavigation-1.2\lib\ios\FlyoutNavigation.dll</HintPath>
+    <Reference Include="GCDiscreetNotification">
+      <HintPath>..\Components\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
     </Reference>
     <Reference Include="GoogleMaps">
       <HintPath>..\Components\googlemapsios-1.4.3\lib\ios\GoogleMaps.dll</HintPath>
     </Reference>
+    <Reference Include="FlyoutNavigation">
+      <HintPath>..\Components\flyoutnavigation-1.2\lib\ios\FlyoutNavigation.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Mobile">
       <HintPath>..\Components\xamarin.mobile-0.6.3\lib\ios\Xamarin.Mobile.dll</HintPath>
-    </Reference>
-    <Reference Include="GCDiscreetNotification">
-      <HintPath>..\Components\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
