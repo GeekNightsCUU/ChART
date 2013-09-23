@@ -71,7 +71,7 @@
   		"elements":[
   			{
   				"type":"string",
-  				"caption":"¿Que es el carril exclusivo Vivebus?",
+  				"caption":"¿Qué es el carril exclusivo Vivebus?",
   				"font":"Helvetica-20"
   			},
   			{
@@ -83,7 +83,7 @@
       		},
       		{
   				"type":"string",
-  				"caption":"¿Que es el carril compartido?",
+  				"caption":"¿Qué es el carril compartido?",
   				"font":"Helvetica-20"
   			},
   			{
@@ -95,7 +95,7 @@
       		},
       		{
   				"type":"string",
-  				"caption":"¿Que es la vuelta izquierda indirecta?",
+  				"caption":"¿Qué es la vuelta izquierda indirecta?",
   				"font":"Helvetica-20"
   			},
   			{
