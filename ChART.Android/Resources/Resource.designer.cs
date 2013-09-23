@@ -1233,8 +1233,8 @@ namespace ChART.Android
 			// aapt resource value: 0x7f05000f
 			public const int abs__up = 2131034127;
 			
-			// aapt resource value: 0x7f05003c
-			public const int closestStation = 2131034172;
+			// aapt resource value: 0x7f05003b
+			public const int closestStation = 2131034171;
 			
 			// aapt resource value: 0x7f05000d
 			public const int disableHome = 2131034125;
@@ -1263,8 +1263,8 @@ namespace ChART.Android
 			// aapt resource value: 0x7f050006
 			public const int listMode = 2131034118;
 			
-			// aapt resource value: 0x7f05003d
-			public const int map = 2131034173;
+			// aapt resource value: 0x7f05003c
+			public const int map = 2131034172;
 			
 			// aapt resource value: 0x7f050000
 			public const int none = 2131034112;
@@ -1272,8 +1272,8 @@ namespace ChART.Android
 			// aapt resource value: 0x7f050001
 			public const int normal = 2131034113;
 			
-			// aapt resource value: 0x7f05003b
-			public const int pager = 2131034171;
+			// aapt resource value: 0x7f05003a
+			public const int pager = 2131034170;
 			
 			// aapt resource value: 0x7f050002
 			public const int satellite = 2131034114;
@@ -1292,9 +1292,6 @@ namespace ChART.Android
 			
 			// aapt resource value: 0x7f050003
 			public const int terrain = 2131034115;
-			
-			// aapt resource value: 0x7f05003a
-			public const int text = 2131034170;
 			
 			// aapt resource value: 0x7f050008
 			public const int useLogo = 2131034120;
