@@ -999,109 +999,112 @@ namespace ChART.Android
 			public const int Gemas = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int IMSS = 2130837653;
+			public const int icon = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int Independencia = 2130837654;
+			public const int IMSS = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ISSSTE = 2130837655;
+			public const int Independencia = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int Juan_Escutia = 2130837656;
+			public const int ISSSTE = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int Juarez = 2130837657;
+			public const int Juan_Escutia = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int Justicia = 2130837658;
+			public const int Juarez = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int Karike = 2130837659;
+			public const int Justicia = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int La_Villita = 2130837660;
+			public const int Karike = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int monoandroidsplash = 2130837661;
+			public const int La_Villita = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int Morelos = 2130837662;
+			public const int monoandroidsplash = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int Ninos_Heroes = 2130837663;
+			public const int Morelos = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int Nueva_Espana = 2130837664;
+			public const int Ninos_Heroes = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int Ochoa = 2130837665;
+			public const int Nueva_Espana = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int Parque_Lerdo = 2130837666;
+			public const int Ochoa = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int Pino = 2130837667;
+			public const int Parque_Lerdo = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int plus = 2130837668;
+			public const int Pino = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int Policia_Federal = 2130837669;
+			public const int plus = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int Quinta_Gameros = 2130837670;
+			public const int Policia_Federal = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int Sagrado_Corazon = 2130837671;
+			public const int Quinta_Gameros = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int San_Jose = 2130837672;
+			public const int Sagrado_Corazon = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int Santa_Rita = 2130837673;
+			public const int San_Jose = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int SCT = 2130837674;
+			public const int Santa_Rita = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int Sexta = 2130837675;
+			public const int SCT = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int Sicomoro = 2130837676;
+			public const int Sexta = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int Sor_Juana = 2130837677;
+			public const int Sicomoro = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int Terminal_Norte = 2130837678;
+			public const int Sor_Juana = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int Terminal_Sur = 2130837679;
+			public const int Terminal_Norte = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int Trebol = 2130837680;
+			public const int Terminal_Sur = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int twitter = 2130837681;
+			public const int Trebol = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int Universidad = 2130837682;
+			public const int twitter = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int Urquidi = 2130837683;
+			public const int Universidad = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int Urueta = 2130837684;
+			public const int Urquidi = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int Zapata = 2130837685;
+			public const int Urueta = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int Zaragoza = 2130837686;
+			public const int Zapata = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int zombie = 2130837687;
+			public const int Zaragoza = 2130837687;
+			
+			// aapt resource value: 0x7f0200b8
+			public const int zombie = 2130837688;
 			
 			static Drawable()
 			{
