@@ -48,11 +48,11 @@
     <Reference Include="GooglePlayServicesFroyoLib">
       <HintPath>..\Components\googleplayservicesfroyo10-10.0\lib\android\GooglePlayServicesFroyoLib.dll</HintPath>
     </Reference>
-    <Reference Include="ActionBarSherlock">
-      <HintPath>..\Components\XamarinActionBarSherlock-4.4.0\lib\android\ActionBarSherlock.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Mobile">
       <HintPath>..\Components\xamarin.mobile-0.6.3\lib\android\Xamarin.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="ActionBarSherlock">
+      <HintPath>..\Components\XamarinActionBarSherlock-4.4.0\lib\android\ActionBarSherlock.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

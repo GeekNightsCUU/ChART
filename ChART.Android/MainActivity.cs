@@ -9,7 +9,7 @@ using Android.Content.PM;
 
 namespace ChART.Android
 {
-	[Activity (Label = "ChARTCUU", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
+	[Activity (Label = "ChART", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
 	public class MainActivity : SherlockFragmentActivity, SherlockActionBar.ITabListener
 	{
 		private ViewPager Pager;
