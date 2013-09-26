@@ -5,6 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using Google.Maps;
+using Style;
 
 namespace ChART.iOS
 {
@@ -27,8 +28,8 @@ namespace ChART.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-			MapServices.ProvideAPIKey (GoogleMapsAPI);            
-            
+			NativeCSS.StyleWithCSS (".menu-table{color:#0b93ff}");
+			MapServices.ProvideAPIKey (GoogleMapsAPI);                        
 			window = new UIWindow(UIScreen.MainScreen.Bounds);
 			var rootNavigationController = new MainViewController (); 
 			window.RootViewController = rootNavigationController;            

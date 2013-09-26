@@ -5,6 +5,7 @@ using MonoTouch.UIKit;
 using FlyoutNavigation;
 using MonoTouch.Dialog;
 using Google.Maps;
+using Style;
 
 namespace ChART.iOS
 {
@@ -56,6 +57,7 @@ namespace ChART.iOS
 				}
 			};
 			View.AddSubview (navigation.View);
+			navigation.NavigationTableView.AddCSSClass ("menu-table");
 		}
 
 		public static UIImage ResizedImageIcon(UIImage image)
