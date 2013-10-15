@@ -20,7 +20,8 @@ namespace ChARTServices.Controllers
         // GET api/routes
         public IEnumerable<Station> Get()
         {
-            var stations = stationsRepository.Stations.OrderBy(s => s.Name);
+            var stations = stationsRepository.Stations.Where(s => s.Route == "Troncal").OrderBy(s => s.Name).ToList<Station>();
+            stations.ForEach(s => s.Icon = null);            
             return stations;
         }
 
