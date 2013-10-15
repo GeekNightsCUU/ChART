@@ -20,7 +20,7 @@ namespace ChART.Domain.Entities
         public double Longitude { get{return Location[0];} set{ Location[0] = value; } }
         [JsonProperty("route")]
         public string Route { get; set; }
-        [JsonProperty("icon")]
+        [JsonProperty("icon", NullValueHandling=NullValueHandling.Ignore)]
         public string Icon { get; set; }
 
         public Station()
