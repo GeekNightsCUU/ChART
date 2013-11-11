@@ -1,34 +1,29 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ChART.Domain/Resources/about.json">
-    <Files>
-      <File FileName="ChART.Android/AboutFragment.cs" Line="20" Column="32" />
-      <File FileName="ChART.Domain/Resources/about.json" Line="1" Column="1" />
-      <File FileName="ChART.Domain/Resources/faqs.json" Line="1" Column="1" />
-    </Files>
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.7.0" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="AppStore" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ChART.iOS/MapViewController.cs">
     <Files>
-      <File FileName="ChART.iOS/MapViewController.cs" Line="74" Column="33" />
+      <File FileName="ChART.Android/MapsFragment.cs" Line="100" Column="105" />
+      <File FileName="ChART.iOS/MapViewController.cs" Line="153" Column="95" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="ChART.iOS" expanded="True" selected="True" />
+          <Node name="ChART.Domain.Android" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>UIDevice.CurrentDevice.CheckSystemVersion(8,0)</Value>
         </State>
       </Pad>
     </Pads>
->>>>>>> 09467f38f6a04202f2e02196f0621711c9176d28
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.ItemProperties.ChART.Android MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" />
-=======
-  <MonoDevelop.Ide.ItemProperties.ChART.Android AndroidDeviceId-Debug="015d483b66240815" MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" />
->>>>>>> 09467f38f6a04202f2e02196f0621711c9176d28
+  <MonoDevelop.Ide.ItemProperties.ChART.Android AndroidDeviceId-Debug="c0808101f8a554f" />
 </Properties>

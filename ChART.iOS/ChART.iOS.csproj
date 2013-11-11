@@ -23,7 +23,8 @@
     <ConsolePause>false</ConsolePause>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
-    <MtouchI18n />
+    <MtouchI18n>
+    </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -46,8 +47,10 @@
     <ConsolePause>false</ConsolePause>
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <IpaPackageName />
-    <MtouchI18n />
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
@@ -79,9 +82,11 @@
     <ConsolePause>False</ConsolePause>
     <CodesignKey>iPhone Distribution: Ricardo Gonzalez Echavarria (S4B46Y8N4E)</CodesignKey>
     <CodesignProvision>487ACFC6-6DB5-444E-AC8A-7F649D2F1D5E</CodesignProvision>
-    <MtouchI18n />
+    <MtouchI18n>
+    </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
-    <IpaPackageName />
+    <IpaPackageName>
+    </IpaPackageName>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -114,14 +119,14 @@
     <Reference Include="GoogleMaps">
       <HintPath>..\Components\googlemapsios-1.4.3\lib\ios\GoogleMaps.dll</HintPath>
     </Reference>
-    <Reference Include="NativeCSS.iOS">
-      <HintPath>..\Components\nativecss-1.0\lib\ios\NativeCSS.iOS.dll</HintPath>
+    <Reference Include="GCDiscreetNotification">
+      <HintPath>..\Components\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
     </Reference>
     <Reference Include="FlyoutNavigation">
       <HintPath>..\Components\flyoutnavigation-1.2\lib\ios\FlyoutNavigation.dll</HintPath>
     </Reference>
-    <Reference Include="GCDiscreetNotification">
-      <HintPath>..\Components\gcdiscreetnotification-1.0\lib\ios\GCDiscreetNotification.dll</HintPath>
+    <Reference Include="NativeCSS.iOS">
+      <HintPath>..\Components\nativecss-1.0\lib\ios\NativeCSS.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
@@ -287,27 +292,22 @@
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="gcdiscreetnotification">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="xamarin.mobile">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>0.6.3</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="googlemapsios">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.4.3</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="flyoutnavigation">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.2</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="nativecss">
-      <InstallationInProgress>False</InstallationInProgress>
       <Version>1.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>

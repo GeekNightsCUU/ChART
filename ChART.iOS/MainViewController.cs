@@ -11,7 +11,6 @@ namespace ChART.iOS
 {
 	public partial class MainViewController : UIViewController
 	{
-		public static readonly float CurrentVersion = 7.0f;
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}

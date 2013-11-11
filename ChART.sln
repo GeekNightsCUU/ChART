@@ -245,7 +245,7 @@ Global
 		{EAAE6221-09F4-4DC0-99DA-3D2DBA1A9129}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ChART.Android\ChART.Android.csproj
+		StartupItem = ChARTServices\ChARTServices.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

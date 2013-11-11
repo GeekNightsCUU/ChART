@@ -22,7 +22,7 @@ namespace ChART.iOS
 		{
 			base.ViewDidLoad ();
 			var bounds = UIScreen.MainScreen.Bounds;
-			if (float.Parse (UIDevice.CurrentDevice.SystemVersion) >= MainViewController.CurrentVersion) {
+			if (UIDevice.CurrentDevice.CheckSystemVersion(7,0)) {
 				navigationViewController.View.Frame = new RectangleF (0, 0, bounds.Width, 64);
 				dialogViewController.View.Frame = new RectangleF (0, 64, bounds.Width, bounds.Height - 44);
 			}else{
@@ -40,7 +40,7 @@ namespace ChART.iOS
 		{
 			base.ViewWillLayoutSubviews ();
 			var bounds = UIScreen.MainScreen.Bounds;
-			if (float.Parse (UIDevice.CurrentDevice.SystemVersion) >= MainViewController.CurrentVersion) {
+			if (UIDevice.CurrentDevice.CheckSystemVersion(7,0)) {
 				navigationViewController.View.Frame = new RectangleF (0, 0, bounds.Width, 64);
 				dialogViewController.View.Frame = new RectangleF (0, 64, bounds.Width, bounds.Height - 44);
 			} else {

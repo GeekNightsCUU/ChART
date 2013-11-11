@@ -74,7 +74,7 @@ namespace ChART.iOS
 			map.Settings.MyLocationButton = true;
 
 			this.mapView = map;
-			if (float.Parse (UIDevice.CurrentDevice.SystemVersion) >= MainViewController.CurrentVersion) {
+			if (UIDevice.CurrentDevice.CheckSystemVersion(7,0)) {
 				NavigationBar.Frame = new RectangleF (NavigationBar.Frame.X, NavigationBar.Frame.Y, NavigationBar.Frame.Width, 64.0f);
 			}
 

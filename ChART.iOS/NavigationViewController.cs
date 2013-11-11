@@ -31,7 +31,7 @@ namespace ChART.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			if (float.Parse (UIDevice.CurrentDevice.SystemVersion) >= MainViewController.CurrentVersion) {
+			if (UIDevice.CurrentDevice.CheckSystemVersion(7,0)) {
 				NavigationBar.Frame = new RectangleF (NavigationBar.Frame.X, NavigationBar.Frame.Y, NavigationBar.Frame.Width, 64.0f);
 			}
 			var item = new UINavigationItem (this.title);
